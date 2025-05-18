@@ -1,7 +1,13 @@
 import React from "react";
+import Navbar from "./components/Navbar";
+import TornPage from "./components/TornPage";
 
 const App = () => {
-  return <div className="text-amber-100">App</div>;
+  return (
+    <div>
+      <Navbar></Navbar>
+    </div>
+  );
 };
 
 export default App;
