@@ -1,11 +1,12 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import TornPage from "./components/TornPage";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
     <div>
-      <Navbar></Navbar>
+      <Home></Home>
     </div>
   );
 };

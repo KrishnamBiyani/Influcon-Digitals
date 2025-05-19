@@ -23,17 +23,17 @@ const Navbar = () => {
 
   return (
     <div className="flex items-center justify-between py-2 px-4 border-b border-gray-400">
-      <div className="lg:w-50 lg:h-25 md:w-45 md:h-22.5 sm:w-40 sm:h-20 w-35 h-17.5">
+      <div className="lg:w-35 lg:h-17.5 md:w-30 md:h-15 sm:w-25 sm:h-12.5 w-35 h-17.5 ml-4">
         <img
           src={logo}
           alt=""
-          className="w-full h-full object-contain scale-200"
+          className="w-full h-full object-contain scale-225"
         />
       </div>
       <div className="mr-5">
         <button
           id="menu-button"
-          className="cursor-pointer flex flex-col justify-between lg:w-15 lg:h-10 md:w-13 md:h-8 w-11 h-6 focus:outline-none"
+          className="cursor-pointer flex flex-col justify-between lg:w-14 lg:h-9 md:w-13 md:h-8 w-11 h-6 focus:outline-none"
           aria-label="Toggle menu"
           onClick={() => {
             setIsOpen((prev) => !prev);
