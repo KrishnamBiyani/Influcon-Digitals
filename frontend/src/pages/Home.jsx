@@ -4,6 +4,8 @@ import { useRef, useState, useLayoutEffect } from "react";
 import Welcome from "./Welcome";
 import About from "./About";
 import Services from "./Services";
+import Working from "./Working";
+import Testimonials from "./Testimonials";
 
 const Home = () => {
   const navbarRef = useRef(null);
@@ -18,7 +20,14 @@ const Home = () => {
     }
   }, []);
 
-  const sections = [Welcome, About, Services];
+  const sections = [
+    Welcome,
+    About,
+    Services,
+    Testimonials,
+    Working,
+    Testimonials,
+  ];
 
   return (
     <>
