@@ -1,10 +1,10 @@
 import tornTop from "../assets/tornPage.png";
 import bgPaper from "../assets/white-bg.png";
-import eyeIcon from "../assets/working-eye.png"; // Replace with your eye icon
-import rocketIcon from "../assets/working-rocket.png"; // Replace with your rocket icon
-import targetIcon from "../assets/working-target.png"; // Replace with your target/headset icon
-import strategyIcon from "../assets/working-repeat.png"; // Replace with your strategy icon
-import audience from "../assets/working-audience.png"; // Replace with your audience image
+import eyeIcon from "../assets/working-eye.png";
+import rocketIcon from "../assets/working-rocket.png";
+import targetIcon from "../assets/working-target.png";
+import strategyIcon from "../assets/working-repeat.png";
+import audience from "../assets/working-audience.png";
 import mobile from "../assets/working-mobile.png";
 
 const Working = ({ navbarHeight }) => {
@@ -147,21 +147,21 @@ const Working = ({ navbarHeight }) => {
           <img
             src={eyeIcon}
             alt=""
-            className="absolute left-0 top-[0] z-0 hidden md:block md:w-70 ml-30 -mt-5"
+            className="absolute left-0 top-[0] z-0 hidden xl:block xl:w-70 ml-30 -mt-5"
           />
         </div>
         <div>
           <img
             src={mobile}
             alt=""
-            className="absolute left-0 bottom-[0] z-0 hidden md:block md:w-100 -mb-10"
+            className="absolute left-0 bottom-[0] z-0 hidden xl:block xl:w-100 -mb-10"
           />
         </div>
         <div>
           <img
             src={audience}
             alt=""
-            className="absolute right-0 top-[15%] z-0 hidden md:block md:w-150 "
+            className="absolute right-0 top-[15%] z-0 hidden xl:block xl:w-150 "
           />
         </div>
       </div>

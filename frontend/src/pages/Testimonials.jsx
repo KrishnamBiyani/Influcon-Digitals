@@ -1,6 +1,5 @@
 import tornTop from "../assets/tornPage.png";
 import bgPaper from "../assets/blackboard.png";
-// You'll need to import these new assets
 import heartPhone from "../assets/testimonials-heart.png"; // The phone with heart icon
 import megaphone from "../assets/testimonials-speaker.png"; // The megaphone icon
 // Profile images for testimonials
@@ -66,7 +65,7 @@ const Testimonials = ({ navbarHeight }) => {
             <div className="w-40 h-1 bg-blue-600 mx-auto"></div>
 
             {/* Phone with heart icon - positioned to the top right */}
-            <div className="absolute hidden lg:block -right-15 top-0 rotate-6 ">
+            <div className="absolute hidden xl:block -right-15 top-0 rotate-6 ">
               <img
                 src={heartPhone}
                 alt="Love Our Service"
@@ -166,7 +165,7 @@ const Testimonials = ({ navbarHeight }) => {
             </button>
 
             {/* Megaphone icon on the right */}
-            <div className="hidden md:block ml-8">
+            <div className="hidden xl:block ml-8">
               <img src={megaphone} alt="Megaphone" className="w-28 lg:w-60" />
             </div>
           </div>

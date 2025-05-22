@@ -97,13 +97,13 @@ const About = ({ navbarHeight }) => {
           </div>
 
           {/* Decorative hands/elements (optional, based on your layout) */}
-          <div className="absolute left-0 bottom-[30%] z-0 hidden md:block md:w-100 rotate-18 -ml-10">
+          <div className="absolute left-0 bottom-[30%] z-0 hidden xl:block xl:w-100 rotate-18 -ml-10">
             <img src={comment} alt="hand left" />
           </div>
-          <div className="absolute right-0 top-[0] z-0 hidden md:block md:w-100 -rotate-25 -mr-20">
+          <div className="absolute right-0 top-[0] z-0 hidden xl:block xl:w-100 -rotate-25 -mr-20">
             <img src={puzzle} alt="hand right" />
           </div>
-          <div className="absolute right-5 bottom-[0] z-0 hidden md:block md:w-60 ">
+          <div className="absolute right-5 bottom-[0] z-0 hidden xl:block xl:w-60 ">
             <img src={bulb} alt="hand right" />
           </div>
         </div>

@@ -6,6 +6,8 @@ import About from "./About";
 import Services from "./Services";
 import Working from "./Working";
 import Testimonials from "./Testimonials";
+import FAQ from "./FAQ";
+import Contact from "./Contact";
 
 const Home = () => {
   const navbarRef = useRef(null);
@@ -24,9 +26,10 @@ const Home = () => {
     Welcome,
     About,
     Services,
-    Testimonials,
     Working,
     Testimonials,
+    FAQ,
+    Contact,
   ];
 
   return (
