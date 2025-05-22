@@ -31,7 +31,7 @@ const Welcome = ({ navbarHeight }) => {
             src={tornTop}
             alt="Torn Edge Layer 1"
             className="min-w-[1024px] max-w-none absolute top-8 md:top-0 left-1/2 -translate-x-1/2
-               scale-y-[1.25] md:scale-y-[1.75] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
+               scale-y-[1.25] md:scale-y-[1.68] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
           />
 
           {/* Layer 2 */}
@@ -39,7 +39,7 @@ const Welcome = ({ navbarHeight }) => {
             src={tornTop}
             alt="Torn Edge Layer 2"
             className="min-w-[1024px] max-w-none absolute top-12 md:top-7 left-1/2 -translate-x-1/2
-               scale-y-[1.25] md:scale-y-[1.75] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
+               scale-y-[1.25] md:scale-y-[1.68] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
           />
 
           {/* Layer 3 */}
@@ -47,20 +47,20 @@ const Welcome = ({ navbarHeight }) => {
             src={tornTop}
             alt="Torn Edge Layer 3"
             className="min-w-[1024px] max-w-none absolute top-16 md:top-14 left-1/2 -translate-x-1/2
-               scale-y-[1.25] md:scale-y-[1.75] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
+               scale-y-[1.25] md:scale-y-[1.68] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
           />
         </div>
 
         {/* Content starts after the torn strip */}
-        <div className="pt-[75px] md:pt-[95px] flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-2xl md:text-5xl font-bold text-blue-700 drop-shadow-lg z-20">
+        <div className="pt-[75px] md:pt-[65px] flex flex-col items-center justify-center text-center px-4">
+          <h1 className="text-2xl md:text-4xl font-bold text-blue-700 drop-shadow-lg z-20">
             Welcome to{" "}
             <span className="underline underline-offset-4">
               InfluCon Digitals
             </span>
           </h1>
-          <div className="mt-1 flex gap-4 px-2 justify-center items-center">
-            <p className="mt-4 mb-8 text-sm md:text-lg text-gray-800 font-medium max-w-2xl z-20 text-left">
+          <div className="mt-1 flex gap-2 px-2 justify-center items-center">
+            <p className="mt-4 mb-8 text-sm md:text-base text-gray-800 font-medium max-w-2xl z-20 text-left">
               Your <strong>Growth Partner</strong> in the Digital Era
               <br />
               At InfluCon Digitals, we don’t just <strong>build brands</strong>—
@@ -71,10 +71,10 @@ const Welcome = ({ navbarHeight }) => {
             </p>
             <img src={monitor} alt="" className="hidden md:block md:w-55" />
           </div>
-          <div className="flex gap-2 px-2 justify-center items-center">
+          <div className="flex gap-1 px-2 justify-center items-center">
             <img src={speaker} alt="" className="hidden md:block md:w-60" />
             <div>
-              <p className="mt-1 mb-1 text-sm md:text-lg text-gray-800 font-medium max-w-2xl z-20 text-left">
+              <p className="mt-1 mb-1 text-sm md:text-base text-gray-800 font-medium max-w-2xl z-20 text-left">
                 From launching bold start-ups to elevating established brands,
                 we bring strategy, <strong>creativity</strong>, and{" "}
                 <strong>performance</strong> together to create campaigns that

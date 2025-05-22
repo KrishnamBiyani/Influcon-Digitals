@@ -34,7 +34,7 @@ const About = ({ navbarHeight }) => {
             src={tornTop}
             alt="Torn Edge Layer 1"
             className="min-w-[1024px] max-w-none absolute top-8 md:top-0 left-1/2 -translate-x-1/2
-               scale-y-[1.25] md:scale-y-[1.75] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
+               scale-y-[1.25] md:scale-y-[1.68] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
           />
 
           {/* Layer 2 */}
@@ -42,7 +42,7 @@ const About = ({ navbarHeight }) => {
             src={tornTop}
             alt="Torn Edge Layer 2"
             className="min-w-[1024px] max-w-none absolute top-12 md:top-7 left-1/2 -translate-x-1/2
-               scale-y-[1.25] md:scale-y-[1.75] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
+               scale-y-[1.25] md:scale-y-[1.68] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
           />
 
           {/* Layer 3 */}
@@ -50,14 +50,14 @@ const About = ({ navbarHeight }) => {
             src={tornTop}
             alt="Torn Edge Layer 3"
             className="min-w-[1024px] max-w-none absolute top-16 md:top-14 left-1/2 -translate-x-1/2
-               scale-y-[1.25] md:scale-y-[1.75] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
+               scale-y-[1.25] md:scale-y-[1.68] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
           />
         </div>
 
         {/* Content starts after the torn strip */}
         <div className="pt-[18px] md:pt-[15px] flex flex-col items-center justify-center text-center px-4">
           <div className="">
-            <h1 className=" text-md sm:text-xl md:text-4xl font-bold text-white drop-shadow-lg z-20 flex items-center space-x-2">
+            <h1 className=" text-md sm:text-xl md:text-3xl font-bold text-white drop-shadow-lg z-20 flex items-center space-x-2">
               {/* Custom underline for "Check us" */}
               <span className="relative inline-block after:content-[''] after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-1 after:bg-blue-600">
                 <span className="no-underline">Check Us</span>
@@ -68,7 +68,7 @@ const About = ({ navbarHeight }) => {
               <img
                 src={showLogo}
                 alt="The Arun Mukherjee Show Logo"
-                className="w-28 sm:w-35 md:w-40 inline-block"
+                className="w-28 sm:w-35 md:w-38 inline-block"
               />
             </h1>
           </div>
@@ -79,17 +79,17 @@ const About = ({ navbarHeight }) => {
               <img
                 src={laptopImage}
                 alt="Podcast Laptop"
-                className=" w-[90%] -mt-25 ml-21"
+                className=" w-[80%] -mt-27.5 ml-35"
               />
               <img
                 src={micIcon}
                 alt=""
-                className="absolute hidden 2xl:block 2xl:w-50 bottom-2 left-113"
+                className="absolute hidden 2xl:block 2xl:w-50 -bottom-3 left-97"
               />
             </div>
 
             {/* Right: Description */}
-            <div className="text-left text-[0.55rem] sm:text-[0.65rem] md:text-[0.7rem] lg:text-[0.8rem] 2xl:text-base text-white max-w-7xl lg:w-[50%]">
+            <div className="text-left text-[0.55rem] sm:text-[0.65rem] md:text-[0.7rem] lg:text-[0.8rem] 2xl:text-[0.9rem] text-white max-w-7xl lg:w-[50%]">
               <strong>
                 <p className="mb-4">
                   In this episode of The Arun Mukherjee Show, we sit down with
@@ -133,14 +133,14 @@ const About = ({ navbarHeight }) => {
               <img
                 src={booksStack}
                 alt="Books"
-                className="absolute bottom-0 left-0 hidden 2xl:block 2xl:w-[280px] z-10"
+                className="absolute -bottom-7 left-5 hidden 2xl:block 2xl:w-[240px] z-10"
               />
 
               {/* Hand/Thumb Image at Middle-Right */}
               <img
                 src={ratingHand}
                 alt="Thumb Rating"
-                className="absolute top-1/2 -right-10 -translate-y-1/2 hidden 2xl:block 2xl:w-[350px] z-10 "
+                className="absolute top-85 -right-10 -translate-y-1/2 hidden 2xl:block 2xl:w-[350px] z-10 "
               />
             </div>
           </div>

@@ -33,7 +33,7 @@ const About = ({ navbarHeight }) => {
             src={tornTop}
             alt="Torn Edge Layer 1"
             className="min-w-[1024px] max-w-none absolute top-8 md:top-0 left-1/2 -translate-x-1/2
-               scale-y-[1.25] md:scale-y-[1.75] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
+               scale-y-[1.25] md:scale-y-[1.68] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
           />
 
           {/* Layer 2 */}
@@ -41,7 +41,7 @@ const About = ({ navbarHeight }) => {
             src={tornTop}
             alt="Torn Edge Layer 2"
             className="min-w-[1024px] max-w-none absolute top-12 md:top-7 left-1/2 -translate-x-1/2
-               scale-y-[1.25] md:scale-y-[1.75] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
+               scale-y-[1.25] md:scale-y-[1.68] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
           />
 
           {/* Layer 3 */}
@@ -49,12 +49,12 @@ const About = ({ navbarHeight }) => {
             src={tornTop}
             alt="Torn Edge Layer 3"
             className="min-w-[1024px] max-w-none absolute top-16 md:top-14 left-1/2 -translate-x-1/2
-               scale-y-[1.25] md:scale-y-[1.75] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
+               scale-y-[1.25] md:scale-y-[1.68] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
           />
         </div>
 
         {/* Content starts after the torn strip */}
-        <div className="pt-[18px] md:pt-[50px] flex flex-col items-center justify-center text-center px-4">
+        <div className="pt-[18px] md:pt-[35px] flex flex-col items-center justify-center text-center px-4">
           {/* Title */}
           <h1 className="text-md sm:text-xl md:text-4xl font-bold text-[#035BFF] drop-shadow-lg z-20 mb-6">
             Our <span className="underline decoration-[#035BFF]">Services</span>
@@ -72,7 +72,7 @@ const About = ({ navbarHeight }) => {
             ].map((service, i) => (
               <div
                 key={i}
-                className="bg-white shadow-xl  rounded-md overflow-hidden w-[220px] h-[240px] mx-auto border-[3px] border-white p-2"
+                className="bg-white shadow-xl  rounded-md overflow-hidden w-[210px] h-[225px] mx-auto border-[3px] border-white p-2"
               >
                 <div
                   className="h-[75%] bg-black flex items-center justify-center"
@@ -86,7 +86,7 @@ const About = ({ navbarHeight }) => {
                   <img
                     src={bgPaper}
                     alt={service.title}
-                    className="w-[60%] h-auto object-contain"
+                    className="w-[50%] h-auto object-contain"
                   />
                 </div>
                 <div className="h-[25%] bg-white text-md font-bold text-[#035BFF] flex items-center justify-center px-2 text-center">
@@ -100,10 +100,10 @@ const About = ({ navbarHeight }) => {
           <div className="absolute left-0 bottom-[30%] z-0 hidden xl:block xl:w-100 rotate-18 -ml-10">
             <img src={comment} alt="hand left" />
           </div>
-          <div className="absolute right-0 top-[0] z-0 hidden xl:block xl:w-100 -rotate-25 -mr-20">
+          <div className="absolute right-0 -top-5 z-0 hidden xl:block xl:w-95 -rotate-25 -mr-20">
             <img src={puzzle} alt="hand right" />
           </div>
-          <div className="absolute right-5 bottom-[0] z-0 hidden xl:block xl:w-60 ">
+          <div className="absolute right-5 -bottom-2 z-0 hidden xl:block xl:w-58 ">
             <img src={bulb} alt="hand right" />
           </div>
         </div>

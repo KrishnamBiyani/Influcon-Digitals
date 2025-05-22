@@ -35,7 +35,7 @@ const Testimonials = ({ navbarHeight }) => {
             src={tornTop}
             alt="Torn Edge Layer 1"
             className="min-w-[1024px] max-w-none absolute top-8 md:top-0 left-1/2 -translate-x-1/2
-               scale-y-[1.25] md:scale-y-[1.75] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
+               scale-y-[1.25] md:scale-y-[1.68] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
           />
 
           {/* Layer 2 */}
@@ -43,7 +43,7 @@ const Testimonials = ({ navbarHeight }) => {
             src={tornTop}
             alt="Torn Edge Layer 2"
             className="min-w-[1024px] max-w-none absolute top-12 md:top-7 left-1/2 -translate-x-1/2
-               scale-y-[1.25] md:scale-y-[1.75] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
+               scale-y-[1.25] md:scale-y-[1.68] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
           />
 
           {/* Layer 3 */}
@@ -51,12 +51,12 @@ const Testimonials = ({ navbarHeight }) => {
             src={tornTop}
             alt="Torn Edge Layer 3"
             className="min-w-[1024px] max-w-none absolute top-16 md:top-14 left-1/2 -translate-x-1/2
-               scale-y-[1.25] md:scale-y-[1.75] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
+               scale-y-[1.25] md:scale-y-[1.68] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
           />
         </div>
 
         {/* Content starts after the torn strip */}
-        <div className="pt-[18px] md:pt-[50px] flex flex-col items-center justify-center px-4 max-w-7xl mx-auto">
+        <div className="pt-[18px] md:pt-[45px] flex flex-col items-center justify-center px-4 max-w-7xl mx-auto">
           {/* Client Testimonials Header */}
           <div className="w-full text-center mb-8">
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2">
@@ -65,33 +65,33 @@ const Testimonials = ({ navbarHeight }) => {
             <div className="w-40 h-1 bg-blue-600 mx-auto"></div>
 
             {/* Phone with heart icon - positioned to the top right */}
-            <div className="absolute hidden xl:block -right-15 top-0 rotate-6 ">
+            <div className="absolute hidden xl:block -right-10 top-2 rotate-6 ">
               <img
                 src={heartPhone}
                 alt="Love Our Service"
-                className="w-20 md:w-32 lg:w-80"
+                className="w-20 md:w-32 lg:w-60"
               />
             </div>
           </div>
 
           {/* Testimonial Cards */}
-          <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          <div className=" w-full grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {/* Testimonial 1 */}
-            <div className="bg-gray-100 rounded-xl p-6  shadow-xl h-auto md:h-80">
+            <div className="bg-gray-100 rounded-xl p-5 shadow-xl h-auto md:h-70">
               <div className="flex items-center mb-4">
                 <img
                   src={neetoProfile}
                   alt="Neeto Kachalia"
-                  className="w-12 h-12 md:w-14 md:h-14 rounded-full mr-3"
+                  className="w-10 h-10 md:w-12 md:h-12 rounded-full mr-3"
                 />
                 <span className="font-medium text-gray-800 text-lg">
                   Neeto Kachalia
                 </span>
               </div>
-              <h3 className="font-bold text-gray-900 mb-3 text-xl md:text-[1.3rem]">
+              <h3 className="font-bold text-gray-900 mb-3 text-xl md:text-xl">
                 How Influcon helped my business go viral.
               </h3>
-              <p className="text-gray-700 text-base md:text-lg">
+              <p className="text-gray-700 text-base md:text-base">
                 As a leading digital marketing agency, we partnered with
                 Influcon Digital to revise their brand presence. The results
                 were beyond our expectations and goals.
@@ -99,21 +99,21 @@ const Testimonials = ({ navbarHeight }) => {
             </div>
 
             {/* Testimonial 2 */}
-            <div className="bg-gray-100 rounded-xl p-6   shadow-xl h-auto md:h-80">
+            <div className="bg-gray-100 rounded-xl p-5 shadow-xl h-auto md:h-70">
               <div className="flex items-center mb-4">
                 <img
                   src={adityaProfile}
                   alt="Aditya Sharma"
-                  className="w-12 h-12 md:w-14 md:h-14 rounded-full mr-3"
+                  className="w-10 h-10 md:w-12 md:h-12 rounded-full mr-3"
                 />
                 <span className="font-medium text-gray-800 text-lg">
                   Aditya Sharma
                 </span>
               </div>
-              <h3 className="font-bold text-gray-900 mb-3 text-xl md:text-[1.3rem]">
+              <h3 className="font-bold text-gray-900 mb-3 text-xl md:text-xl">
                 How DigitalBoost transformed my startup's reach.
               </h3>
-              <p className="text-gray-700 text-base md:text-lg">
+              <p className="text-gray-700 text-base md:text-base">
                 As a premier digital marketing firm, we collaborated with
                 InfluCon to enhance online visibility. Our partnership led to
                 exceptional growth and market results.
@@ -121,21 +121,21 @@ const Testimonials = ({ navbarHeight }) => {
             </div>
 
             {/* Testimonial 3 */}
-            <div className="bg-gray-100 rounded-xl p-6   shadow-xl h-auto md:h-80">
+            <div className="bg-gray-100 rounded-xl p-5 shadow-xl h-auto md:h-70">
               <div className="flex items-center mb-4">
                 <img
                   src={riyaProfile}
                   alt="Riya Malhotra"
-                  className="w-12 h-12 md:w-14 md:h-14 rounded-full mr-3"
+                  className="w-12 h-12 md:w-12 md:h-12 rounded-full mr-3"
                 />
                 <span className="font-medium text-gray-800 text-lg">
                   Riya Malhotra
                 </span>
               </div>
-              <h3 className="font-bold text-gray-900 mb-3 text-xl md:text-[1.3rem]">
+              <h3 className="font-bold text-gray-900 mb-3 text-xl md:text-xl">
                 How my brand skyrocketed with Influcon's expertise.
               </h3>
-              <p className="text-gray-700 text-base md:text-lg">
+              <p className="text-gray-700 text-base md:text-base">
                 As a top-tier digital marketing agency, we collaborated with
                 Influcon Digi to amplify their market presence. The results
                 achieved exceeded our expectations and goals.
@@ -144,8 +144,8 @@ const Testimonials = ({ navbarHeight }) => {
           </div>
 
           {/* Call to Action Section */}
-          <div className="w-full flex flex-col md:flex-row items-center justify-center mb-12">
-            <h2 className="text-2xl md:text-5xl font-bold text-white mr-6">
+          <div className=" w-full flex flex-col md:flex-row items-center justify-center mb-10">
+            <h2 className="text-2xl md:text-4xl font-bold text-white mr-6">
               Ready to work with us ?
             </h2>
             <button className="bg-blue-600 text-white font-semibold py-2 px-6 rounded-full flex items-center mt-4 md:mt-0">

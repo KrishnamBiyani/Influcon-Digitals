@@ -52,12 +52,12 @@ const Contact = ({ navbarHeight }) => {
         </div>
 
         {/* Content starts after the torn strip */}
-        <div className=" pt-[18px] md:pt-[50px] flex  justify-center px-4 max-w-[90rem] ">
+        <div className=" pt-[18px] md:pt-[20px] flex  justify-center px-4 max-w-[90rem] ">
           <div className="">
             <img
               src={influconCard}
               alt="Digital Revolution Rocket"
-              className="w-32 md:w-48 lg:w-150"
+              className="w-32 md:w-48 lg:w-130"
             />
           </div>
           {/* Main Footer Content */}
@@ -66,7 +66,7 @@ const Contact = ({ navbarHeight }) => {
             <div className="flex flex-col lg:flex-row items-center justify-between mb-12">
               {/* Center: Main Message */}
               <div className="text-center text-white mb-8 lg:mb-0">
-                <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold">
+                <h1 className="text-2xl md:text-4xl lg:text-4xl font-bold">
                   Become part of the{" "}
                   <span className="text-blue-600 relative">
                     DIGITAL
@@ -78,7 +78,7 @@ const Contact = ({ navbarHeight }) => {
             </div>
 
             {/* Footer Links Section */}
-            <div className=" grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 text-white pl-20 pt-5">
+            <div className=" grid grid-cols-1 md:grid-cols-3  mb-12 text-white pl-7 pt-5">
               {/* Navigation Column */}
               <div>
                 <h3 className="text-xl font-bold mb-6">Navigation</h3>
@@ -238,7 +238,7 @@ const Contact = ({ navbarHeight }) => {
         <img
           src={rocketImage}
           alt="Digital Revolution Rocket"
-          className="absolute top-32 -right-7 hidden xl:block xl:w-80 -rotate-15"
+          className="absolute top-32 -right-7 hidden xl:block xl:w-70 -rotate-15"
         />
       </div>
     </div>

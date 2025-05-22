@@ -30,7 +30,7 @@ const FAQ = ({ navbarHeight }) => {
             src={tornTop}
             alt="Torn Edge Layer 1"
             className="min-w-[1024px] max-w-none absolute top-8 md:top-0 left-1/2 -translate-x-1/2
-               scale-y-[1.25] md:scale-y-[1.75] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
+               scale-y-[1.25] md:scale-y-[1.68] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
           />
 
           {/* Layer 2 */}
@@ -38,7 +38,7 @@ const FAQ = ({ navbarHeight }) => {
             src={tornTop}
             alt="Torn Edge Layer 2"
             className="min-w-[1024px] max-w-none absolute top-12 md:top-7 left-1/2 -translate-x-1/2
-               scale-y-[1.25] md:scale-y-[1.75] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
+               scale-y-[1.25] md:scale-y-[1.68] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
           />
 
           {/* Layer 3 */}
@@ -46,7 +46,7 @@ const FAQ = ({ navbarHeight }) => {
             src={tornTop}
             alt="Torn Edge Layer 3"
             className="min-w-[1024px] max-w-none absolute top-16 md:top-14 left-1/2 -translate-x-1/2
-               scale-y-[1.25] md:scale-y-[1.75] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
+               scale-y-[1.25] md:scale-y-[1.68] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
           />
         </div>
 
@@ -54,14 +54,14 @@ const FAQ = ({ navbarHeight }) => {
         <div className=" pt-[18px] md:pt-[50px] flex flex-col items-center justify-center px-4 max-w-7xl mx-auto">
           <div className="w-full flex flex-col lg:flex-row gap-8 lg:gap-12">
             {/* Left Side - Header, Description, and Contact */}
-            <div className="w-full lg:w-1/2 ">
+            <div className="w-full lg:w-[45%] ">
               {/* Header */}
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-600 mb-4">
+              <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold text-blue-600 mb-4">
                 Digital Marketing FAQs
               </h1>
 
               {/* Description */}
-              <p className="text-base md:text-lg mb-6 leading-relaxed">
+              <p className="text-base md:text-base mb-6 leading-relaxed">
                 Find clear, insightful answers to the most common questions
                 about digital marketing. Our comprehensive educational resource
                 covers everything from frequently asked questions to help our
@@ -69,7 +69,7 @@ const FAQ = ({ navbarHeight }) => {
               </p>
 
               {/* Contact Button */}
-              <button className="bg-blue-600 text-white font-medium py-3 px-8 rounded-full text-lg mb-8 hover:bg-blue-700 transition-colors">
+              <button className="bg-blue-600 text-white font-medium py-2 px-6 rounded-full text-lg mb-8 hover:bg-blue-700 transition-colors">
                 CONTACT US
               </button>
 
@@ -84,9 +84,7 @@ const FAQ = ({ navbarHeight }) => {
             </div>
 
             {/* Right Side - FAQs and Contact Form */}
-            <div className="w-full lg:w-1/2 mt-6">
-              {/* Top Right Text */}
-
+            <div className=" w-full lg:w-[48%] mt-6">
               {/* FAQ Questions */}
               <div className="space-y-4 mb-8">
                 {/* FAQ 1 */}
@@ -134,7 +132,7 @@ const FAQ = ({ navbarHeight }) => {
               <div className="bg-gray-800 rounded-lg p-6">
                 <textarea
                   placeholder="Type message here......"
-                  className="w-full h-24 bg-transparent border-none text-white placeholder-gray-400 resize-none focus:outline-none"
+                  className="w-full h-22 bg-transparent border-none text-white placeholder-gray-400 resize-none focus:outline-none"
                 />
                 <div className="flex justify-between items-center mt-4">
                   <p className="text-sm text-blue-400">
@@ -162,11 +160,11 @@ const FAQ = ({ navbarHeight }) => {
         </div>
 
         <div className="absolute text-left mb-8 top-7 right-0">
-          <h2 className="text-2xl md:text-4xl font-bold text-blue-600 ">
+          <h2 className="text-2xl md:text-2xl font-bold text-blue-600 ">
             TOGETHER
           </h2>
-          <h5 className="text-lg md:text-2xl">WE CAN MAKE A</h5>
-          <h2 className="text-2xl md:text-4xl font-bold text-blue-800 ">
+          <h5 className="text-lg md:text-xl">WE CAN MAKE A</h5>
+          <h2 className="text-2xl md:text-2xl font-bold text-blue-800 ">
             DIFFERENCE
           </h2>
         </div>
