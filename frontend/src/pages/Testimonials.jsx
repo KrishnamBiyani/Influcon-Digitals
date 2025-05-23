@@ -60,29 +60,29 @@ const Testimonials = ({ navbarHeight }) => {
           {/* Client Testimonials Header */}
           <div className="w-full text-center mb-8">
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2">
-              Client Testimonials
-            </h1>
-            <div className="w-40 h-1 bg-blue-600 mx-auto"></div>
+              <span
+                className="relative inline-block
+             after:content-['']
+             after:absolute after:left-0 after:right-10 after:-bottom-1 after:h-1 after:bg-blue-600
+             before:content-['']
+             before:absolute before:left-0 before:right-0 before:-bottom-3 before:h-1 before:bg-blue-600"
+              >
+                <span className="no-underline">Client Test</span>
+              </span>
 
-            {/* Phone with heart icon - positioned to the top right */}
-            <div className="absolute hidden xl:block -right-10 top-2 rotate-6 ">
-              <img
-                src={heartPhone}
-                alt="Love Our Service"
-                className="w-20 md:w-32 lg:w-60"
-              />
-            </div>
+              <span>imonials</span>
+            </h1>
           </div>
 
           {/* Testimonial Cards */}
-          <div className=" w-full grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-5">
             {/* Testimonial 1 */}
-            <div className="bg-gray-100 rounded-xl p-5 shadow-xl h-auto md:h-70">
+            <div className="bg-gray-100 rounded-xl p-5 shadow-xl h-auto xl:h-[270px] xl:w-[360px] md:h-70">
               <div className="flex items-center mb-4">
                 <img
                   src={neetoProfile}
                   alt="Neeto Kachalia"
-                  className="w-10 h-10 md:w-12 md:h-12 rounded-full mr-3"
+                  className="w-10 h-10 md:w-9 md:h-9 rounded-full mr-3"
                 />
                 <span className="font-medium text-gray-800 text-lg">
                   Neeto Kachalia
@@ -91,7 +91,7 @@ const Testimonials = ({ navbarHeight }) => {
               <h3 className="font-bold text-gray-900 mb-3 text-xl md:text-xl">
                 How Influcon helped my business go viral.
               </h3>
-              <p className="text-gray-700 text-base md:text-base">
+              <p className="text-gray-700 text-base md:text-sm">
                 As a leading digital marketing agency, we partnered with
                 Influcon Digital to revise their brand presence. The results
                 were beyond our expectations and goals.
@@ -99,12 +99,12 @@ const Testimonials = ({ navbarHeight }) => {
             </div>
 
             {/* Testimonial 2 */}
-            <div className="bg-gray-100 rounded-xl p-5 shadow-xl h-auto md:h-70">
+            <div className="bg-gray-100 rounded-xl p-5 shadow-xl h-auto xl:h-[270px] xl:w-[360px] md:h-70">
               <div className="flex items-center mb-4">
                 <img
                   src={adityaProfile}
                   alt="Aditya Sharma"
-                  className="w-10 h-10 md:w-12 md:h-12 rounded-full mr-3"
+                  className="w-10 h-10 md:w-9 md:h-9 rounded-full mr-3"
                 />
                 <span className="font-medium text-gray-800 text-lg">
                   Aditya Sharma
@@ -113,7 +113,7 @@ const Testimonials = ({ navbarHeight }) => {
               <h3 className="font-bold text-gray-900 mb-3 text-xl md:text-xl">
                 How DigitalBoost transformed my startup's reach.
               </h3>
-              <p className="text-gray-700 text-base md:text-base">
+              <p className="text-gray-700 text-base md:text-sm">
                 As a premier digital marketing firm, we collaborated with
                 InfluCon to enhance online visibility. Our partnership led to
                 exceptional growth and market results.
@@ -121,12 +121,12 @@ const Testimonials = ({ navbarHeight }) => {
             </div>
 
             {/* Testimonial 3 */}
-            <div className="bg-gray-100 rounded-xl p-5 shadow-xl h-auto md:h-70">
+            <div className="bg-gray-100 rounded-xl p-5 shadow-xl h-auto xl:h-[270px] xl:w-[360px] md:h-70">
               <div className="flex items-center mb-4">
                 <img
                   src={riyaProfile}
                   alt="Riya Malhotra"
-                  className="w-12 h-12 md:w-12 md:h-12 rounded-full mr-3"
+                  className="w-9 h-9 md:w-9 md:h-9 rounded-full mr-3"
                 />
                 <span className="font-medium text-gray-800 text-lg">
                   Riya Malhotra
@@ -135,7 +135,7 @@ const Testimonials = ({ navbarHeight }) => {
               <h3 className="font-bold text-gray-900 mb-3 text-xl md:text-xl">
                 How my brand skyrocketed with Influcon's expertise.
               </h3>
-              <p className="text-gray-700 text-base md:text-base">
+              <p className="text-gray-700 text-base md:text-sm">
                 As a top-tier digital marketing agency, we collaborated with
                 Influcon Digi to amplify their market presence. The results
                 achieved exceeded our expectations and goals.
@@ -144,7 +144,7 @@ const Testimonials = ({ navbarHeight }) => {
           </div>
 
           {/* Call to Action Section */}
-          <div className=" w-full flex flex-col md:flex-row items-center justify-center mb-10">
+          <div className="w-full flex flex-col md:flex-row items-center justify-center ">
             <h2 className="text-2xl md:text-4xl font-bold text-white mr-6">
               Ready to work with us ?
             </h2>
@@ -166,8 +166,12 @@ const Testimonials = ({ navbarHeight }) => {
 
             {/* Megaphone icon on the right */}
             <div className="hidden xl:block ml-8">
-              <img src={megaphone} alt="Megaphone" className="w-28 lg:w-60" />
+              <img src={megaphone} alt="Megaphone" className="w-28 lg:w-55" />
             </div>
+          </div>
+
+          <div className="absolute right-0 top-5 z-0 hidden xl:block xl:w-55 2xl:x-95  overflow-hidden">
+            <img src={heartPhone} alt="hand right" className="translate-x-8" />
           </div>
         </div>
       </div>

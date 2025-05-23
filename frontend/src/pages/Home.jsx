@@ -67,7 +67,7 @@ const Home = () => {
             key={idx}
             className="sticky"
             style={{
-              height: videoHeight + 90,
+              height: videoHeight + 55,
               top: 0,
               zIndex: 20 + idx,
             }}

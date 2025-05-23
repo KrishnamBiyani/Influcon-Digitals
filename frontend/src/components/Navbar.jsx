@@ -22,12 +22,19 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex items-center justify-between py-2 px-4 ">
-      <div className="lg:w-35 lg:h-17.5 md:w-30 md:h-15 sm:w-25 sm:h-12.5 w-35 h-17.5 ml-4">
+    <div
+      className="flex items-center justify-between py-2 px-4"
+      style={{ height: "72px" }} // Fix navbar height here to prevent jumping
+    >
+      <div
+        className="lg:w-35 lg:h-17.5 md:w-30 md:h-15 sm:w-25 sm:h-12.5 w-35 h-17.5 ml-4"
+        style={{ maxHeight: "72px" }} // Keep logo container height consistent
+      >
         <img
           src={logo}
           alt=""
           className="w-full h-full object-contain scale-225"
+          style={{ maxHeight: "72px" }}
         />
       </div>
       <div className="mr-5">
@@ -35,9 +42,7 @@ const Navbar = () => {
           id="menu-button"
           className="cursor-pointer flex flex-col justify-between lg:w-14 lg:h-9 md:w-13 md:h-8 w-11 h-6 focus:outline-none"
           aria-label="Toggle menu"
-          onClick={() => {
-            setIsOpen((prev) => !prev);
-          }}
+          onClick={() => setIsOpen((prev) => !prev)}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
@@ -50,7 +55,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      <SideMenu isOpen={isOpen} setIsOpen={setIsOpen}></SideMenu>
+      <SideMenu isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   );
 };

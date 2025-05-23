@@ -1,179 +1,129 @@
 import tornTop from "../assets/tornPage.png";
 import bgPaper from "../assets/blackboard.png";
-import influconCard from "../assets/contact-card.png"; // The business card/logo image
-import rocketImage from "../assets/contact-hand.png"; // The rocket illustration
+import influconCard from "../assets/contact-card.png";
+import rocketImage from "../assets/contact-hand.png";
+import last from "../assets/contact-last.png";
 
 const Contact = ({ navbarHeight }) => {
   const offsetTop = navbarHeight * 1.2;
 
   return (
     <div className="w-full min-h-screen relative bg-transparent">
-      {/* Top transparent spacer */}
+      {/* Top spacer to account for navbar height */}
       <div style={{ height: offsetTop }} />
 
-      {/* Paper area from below spacer to bottom */}
+      {/* Main content area */}
       <div
-        className="relative w-full h-full"
+        className="relative w-full"
         style={{
           minHeight: `calc(100vh - ${offsetTop}px)`,
           backgroundImage: `url(${bgPaper})`,
           backgroundRepeat: "repeat",
           backgroundSize: "cover",
+          paddingBottom: "160px", // extra space for CTA to fit
         }}
       >
-        {/* Torn strips pulled slightly above paper edge */}
+        {/* Torn strips */}
         <div
           className="absolute w-full h-[320px] pointer-events-none overflow-hidden"
           style={{ top: "-160px", zIndex: 10 }}
         >
-          {/* Layer 1 */}
-          <img
-            src={tornTop}
-            alt="Torn Edge Layer 1"
-            className="min-w-[1024px] max-w-none absolute top-8 md:top-0 left-1/2 -translate-x-1/2
-               scale-y-[1.25] md:scale-y-[1.75] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
-          />
-
-          {/* Layer 2 */}
-          <img
-            src={tornTop}
-            alt="Torn Edge Layer 2"
-            className="min-w-[1024px] max-w-none absolute top-12 md:top-7 left-1/2 -translate-x-1/2
-               scale-y-[1.25] md:scale-y-[1.75] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
-          />
-
-          {/* Layer 3 */}
-          <img
-            src={tornTop}
-            alt="Torn Edge Layer 3"
-            className="min-w-[1024px] max-w-none absolute top-16 md:top-14 left-1/2 -translate-x-1/2
-               scale-y-[1.25] md:scale-y-[1.75] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none"
-          />
+          {[8, 12, 16].map((topOffset, index) => (
+            <img
+              key={index}
+              src={tornTop}
+              alt={`Torn Edge Layer ${index + 1}`}
+              className={`min-w-[1024px] max-w-none absolute top-${topOffset} md:top-${
+                topOffset - 1
+              } left-1/2 -translate-x-1/2 scale-y-[1.25] md:scale-y-[1.75] scale-x-[1] md:scale-x-[1.05] rotate-[1deg] pointer-events-none select-none`}
+            />
+          ))}
         </div>
 
-        {/* Content starts after the torn strip */}
-        <div className=" pt-[18px] md:pt-[20px] flex  justify-center px-4 max-w-[90rem] ">
-          <div className="">
+        {/* Main Content */}
+        <div className="pt-[18px] md:pt-[20px] flex justify-center px-4 max-w-[90rem]">
+          <div>
             <img
               src={influconCard}
               alt="Digital Revolution Rocket"
               className="w-32 md:w-48 lg:w-130"
             />
           </div>
-          {/* Main Footer Content */}
-          <div className="w-full  pt-15">
-            {/* Top Section with Logo and Main Message */}
+          <div className="w-full pt-20">
             <div className="flex flex-col lg:flex-row items-center justify-between mb-12">
-              {/* Center: Main Message */}
               <div className="text-center text-white mb-8 lg:mb-0">
-                <h1 className="text-2xl md:text-4xl lg:text-4xl font-bold">
+                <h1 className="text-2xl md:text-5xl font-bold text-white drop-shadow-lg z-20">
                   Become part of the{" "}
-                  <span className="text-blue-600 relative">
-                    DIGITAL
-                    <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-600"></div>
-                  </span>{" "}
-                  revolution
+                  <span
+                    className="
+      relative text-blue-500 mr-2
+      after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2.5px] after:bg-white
+      before:content-[''] before:absolute before:left-0 before:right-0 before:bottom-[-8px] before:h-[2.5px] before:bg-white
+    "
+                  >
+                    Digital
+                  </span>
+                  Revolution
                 </h1>
               </div>
             </div>
 
-            {/* Footer Links Section */}
-            <div className=" grid grid-cols-1 md:grid-cols-3  mb-12 text-white pl-7 pt-5">
-              {/* Navigation Column */}
+            {/* Footer Links */}
+            <div className="grid grid-cols-1 md:grid-cols-3 max-w-3xl text-white pl-7 pt-12">
               <div>
                 <h3 className="text-xl font-bold mb-6">Navigation</h3>
                 <ul className="space-y-3">
-                  <li>
-                    <a
-                      href="#"
-                      className="text-gray-300 hover:text-white transition-colors"
-                    >
-                      Service
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="text-gray-300 hover:text-white transition-colors"
-                    >
-                      Agency
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="text-gray-300 hover:text-white transition-colors"
-                    >
-                      Case Study
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="text-gray-300 hover:text-white transition-colors"
-                    >
-                      Resource
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="text-gray-300 hover:text-white transition-colors"
-                    >
-                      Contact
-                    </a>
-                  </li>
+                  {[
+                    "Service",
+                    "Agency",
+                    "Case Study",
+                    "Resource",
+                    "Contact",
+                  ].map((item, idx) => (
+                    <li key={idx}>
+                      <a
+                        href="#"
+                        className="text-gray-300 hover:text-white transition-colors"
+                      >
+                        {item}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
-
-              {/* License Column */}
               <div>
                 <h3 className="text-xl font-bold mb-6">License</h3>
                 <ul className="space-y-3">
-                  <li>
-                    <a
-                      href="#"
-                      className="text-gray-300 hover:text-white transition-colors"
-                    >
-                      Privacy Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="text-gray-300 hover:text-white transition-colors"
-                    >
-                      Copyright
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="text-gray-300 hover:text-white transition-colors"
-                    >
-                      Email Address
-                    </a>
-                  </li>
+                  {["Privacy Policy", "Copyright", "Email Address"].map(
+                    (item, idx) => (
+                      <li key={idx}>
+                        <a
+                          href="#"
+                          className="text-gray-300 hover:text-white transition-colors"
+                        >
+                          {item}
+                        </a>
+                      </li>
+                    )
+                  )}
                 </ul>
               </div>
-
-              {/* Contact Column */}
               <div>
                 <h3 className="text-xl font-bold mb-6">Contact</h3>
                 <ul className="space-y-3">
                   <li className="flex items-center">
                     <svg
-                      className="w-5 h-5 mr-3 text-blue-600"
+                      className="w-5 h-5 mr-3 text-white-600"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
                       <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                     </svg>
-                    <span className="text-gray-300">+91 9918945</span>
+                    <span className="text-gray-300">7439918045</span>
                   </li>
                   <li className="flex items-center">
                     <svg
-                      className="w-5 h-5 mr-3 text-blue-600"
+                      className="w-5 h-5 mr-3 text-white-600"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -186,7 +136,7 @@ const Contact = ({ navbarHeight }) => {
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 mr-3 mt-1 text-blue-600"
+                      className="w-5 h-5 mr-3 mt-1 text-white-600"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -197,7 +147,7 @@ const Contact = ({ navbarHeight }) => {
                       />
                     </svg>
                     <span className="text-gray-300">
-                      71, Duar Terrace Ballygunge,
+                      71, Dover Terrace Ballygunge,
                       <br />
                       Kolkata, West Bengal 700019
                     </span>
@@ -205,15 +155,22 @@ const Contact = ({ navbarHeight }) => {
                 </ul>
               </div>
             </div>
-
-            {/* Bottom Call to Action */}
           </div>
         </div>
 
-        <div className="  bottom h-65px absolute w-full   mt-10">
-          <div className="h-1 bg-blue-700 mb-10"></div>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-10">
-            <h2 className=" text-2xl md:text-5xl font-bold text-white mb-4 md:mb-0">
+        {/* CTA Fixed to Bottom */}
+        <div
+          className="absolute bottom-0 left-0 w-full bg-opacity-90 z-20 px-4 xl:h-40 2xl:h-30"
+          style={{
+            backgroundImage: `url(${last})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="h-1 bg-blue-700 "></div>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-10 py-6  border-t border-white h-full">
+            <h2 className="text-2xl md:text-5xl font-bold text-white text-center mb-4 md:mb-0">
               Ready to work with us ?
             </h2>
             <button className="bg-blue-600 text-white font-medium py-3 px-8 rounded-full flex items-center hover:bg-blue-700 transition-colors">
@@ -234,11 +191,13 @@ const Contact = ({ navbarHeight }) => {
           </div>
         </div>
       </div>
-      <div>
+
+      {/* Right-side rocket/hand image */}
+      <div className="absolute right-0 top-28 z-0 hidden xl:block xl:w-55 2xl:x-95 overflow-hidden">
         <img
           src={rocketImage}
-          alt="Digital Revolution Rocket"
-          className="absolute top-32 -right-7 hidden xl:block xl:w-70 -rotate-15"
+          alt="hand right"
+          className="-rotate-15 translate-x-8"
         />
       </div>
     </div>

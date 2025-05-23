@@ -1,5 +1,6 @@
 import tornTop from "../assets/tornPage.png";
 import bgPaper from "../assets/white-bg.png";
+import black from "../assets/blackboard.png";
 import handshakeImage from "../assets/FAQ-handshake.png";
 
 const FAQ = ({ navbarHeight }) => {
@@ -15,7 +16,7 @@ const FAQ = ({ navbarHeight }) => {
         className="relative w-full h-full"
         style={{
           minHeight: `calc(100vh - ${offsetTop}px)`,
-          backgroundImage: `url(${bgPaper})`,
+          backgroundImage: `linear-gradient(rgba(217, 232, 246, 0.5), rgba(217, 232, 246, 0.5)),url(${bgPaper})`,
           backgroundRepeat: "repeat",
           backgroundSize: "cover",
         }}
@@ -54,14 +55,14 @@ const FAQ = ({ navbarHeight }) => {
         <div className=" pt-[18px] md:pt-[50px] flex flex-col items-center justify-center px-4 max-w-7xl mx-auto">
           <div className="w-full flex flex-col lg:flex-row gap-8 lg:gap-12">
             {/* Left Side - Header, Description, and Contact */}
-            <div className="w-full lg:w-[45%] ">
+            <div className="w-full xl:w-[42%] 2xl:w-[45%] ">
               {/* Header */}
-              <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold text-blue-600 mb-4">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-600 mb-4">
                 Digital Marketing FAQs
               </h1>
 
               {/* Description */}
-              <p className="text-base md:text-base mb-6 leading-relaxed">
+              <p className="text-base md:text-base mb-6 leading-relaxed text-[#005AE0]">
                 Find clear, insightful answers to the most common questions
                 about digital marketing. Our comprehensive educational resource
                 covers everything from frequently asked questions to help our
@@ -69,8 +70,26 @@ const FAQ = ({ navbarHeight }) => {
               </p>
 
               {/* Contact Button */}
-              <button className="bg-blue-600 text-white font-medium py-2 px-6 rounded-full text-lg mb-8 hover:bg-blue-700 transition-colors">
+              <button
+                className="text-white font-medium py-2 px-6 rounded-full flex items-center transition-colors hover:bg-blue-700 mb-8"
+                style={{
+                  background: "rgba(19, 124, 254, 1)", // custom darker blue
+                  boxShadow: `inset 0px 4px 4px rgba(0, 0, 0, 0.25), inset 4px 0px 4px rgba(0, 0, 0, 0.25)`,
+                }}
+              >
                 CONTACT US
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 ml-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
               </button>
 
               {/* Handshake Image */}
@@ -78,24 +97,24 @@ const FAQ = ({ navbarHeight }) => {
                 <img
                   src={handshakeImage}
                   alt="Business Handshake with Laptop"
-                  className="w-full"
+                  className="w-full filter"
                 />
               </div>
             </div>
 
             {/* Right Side - FAQs and Contact Form */}
-            <div className=" w-full lg:w-[48%] mt-6">
+            <div className=" w-full xl:w-[45%] 2xl:w-[48%] mt-6">
               {/* FAQ Questions */}
               <div className="space-y-4 mb-8">
                 {/* FAQ 1 */}
                 <div className="border-b border-t border-gray-400 pb-4">
                   <div className="flex justify-between items-center cursor-pointer">
-                    <h3 className="text-lg font-medium">
+                    <h3 className="text-xl  text-[#010205] font-[700]">
                       Why is digital marketing important for my business?
                     </h3>
                     <span className="text-2xl font-bold">+</span>
                   </div>
-                  <p className="text-sm  mt-2">
+                  <p className="text-sm  mt-2 text-[#878C91]">
                     Digital marketing allows businesses to reach and engage with
                     a broader audience, generate leads, drive website traffic,
                     increase brand awareness, and ultimately grow their customer
@@ -108,7 +127,7 @@ const FAQ = ({ navbarHeight }) => {
                 {/* FAQ 2 */}
                 <div className="border-b border-gray-400 pb-4">
                   <div className="flex justify-between items-center cursor-pointer">
-                    <h3 className="text-lg font-medium">
+                    <h3 className="text-xl  text-[#010205] font-[700]">
                       How can digital marketing help improve my website's
                       visibility?
                     </h3>
@@ -119,7 +138,7 @@ const FAQ = ({ navbarHeight }) => {
                 {/* FAQ 3 */}
                 <div className="border-b border-gray-400 pb-4">
                   <div className="flex justify-between items-center cursor-pointer">
-                    <h3 className="text-lg font-medium">
+                    <h3 className="text-xl  text-[#010205] font-[700]">
                       How long does it take to see results from digital
                       marketing efforts?
                     </h3>
@@ -129,42 +148,51 @@ const FAQ = ({ navbarHeight }) => {
               </div>
 
               {/* Contact Form */}
-              <div className="bg-gray-800 rounded-lg p-6">
+              <div
+                className="rounded-lg p-6"
+                style={{ backgroundImage: `url(${black})` }}
+              >
                 <textarea
                   placeholder="Type message here......"
-                  className="w-full h-22 bg-transparent border-none text-white placeholder-gray-400 resize-none focus:outline-none"
+                  className="w-full h-12 bg-transparent border-none text-white placeholder-gray-400 resize-none focus:outline-none"
                 />
-                <div className="flex justify-between items-center mt-4">
-                  <p className="text-sm text-blue-400">
-                    We will answer your questions via email within 48 hours.
-                  </p>
-                  <button className="bg-blue-600 text-white font-medium py-2 px-6 rounded-full flex items-center hover:bg-blue-700 transition-colors">
-                    Send Message
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 ml-2"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </button>
-                </div>
+              </div>
+              <div className="flex justify-between items-center mt-4">
+                <p className="text-sm text-[#005AE0]">
+                  We will answer your questions via email within 48 hours.
+                </p>
+                <button
+                  className="text-white font-medium py-2 px-6 rounded-full flex items-center transition-colors hover:bg-blue-700"
+                  style={{
+                    background: "rgba(19, 124, 254, 1)", // custom darker blue
+                    boxShadow: `inset 0px 4px 4px rgba(0, 0, 0, 0.25), inset 4px 0px 4px rgba(0, 0, 0, 0.25)`,
+                  }}
+                >
+                  Send Message
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 ml-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="absolute text-left mb-8 top-7 right-0">
-          <h2 className="text-2xl md:text-2xl font-bold text-blue-600 ">
+        <div className="absolute text-left mb-8 top-9 right-0">
+          <h2 className="text-lg xl:text-xl 2xl:text-xl  font-bold text-blue-600 ">
             TOGETHER
           </h2>
-          <h5 className="text-lg md:text-xl">WE CAN MAKE A</h5>
-          <h2 className="text-2xl md:text-2xl font-bold text-blue-800 ">
+          <h5 className="text-lg xl:text-xl 2xl:text-xl">WE CAN MAKE A</h5>
+          <h2 className="text-lg xl:text-xl 2xl:text-xl font-bold text-blue-800 ">
             DIFFERENCE
           </h2>
         </div>

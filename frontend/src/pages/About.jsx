@@ -57,9 +57,15 @@ const About = ({ navbarHeight }) => {
         {/* Content starts after the torn strip */}
         <div className="pt-[18px] md:pt-[15px] flex flex-col items-center justify-center text-center px-4">
           <div className="">
-            <h1 className=" text-md sm:text-xl md:text-3xl font-bold text-white drop-shadow-lg z-20 flex items-center space-x-2">
+            <h1 className=" text-md sm:text-xl md:text-5xl font-bold text-white drop-shadow-lg z-20 flex items-center space-x-2">
               {/* Custom underline for "Check us" */}
-              <span className="relative inline-block after:content-[''] after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-1 after:bg-blue-600">
+              <span
+                className="relative inline-block
+                   after:content-['']
+                   after:absolute after:left-0 after:right-3 after:-bottom-1 after:h-1 after:bg-blue-600
+                   before:content-['']
+                   before:absolute before:left-0 before:right-10 before:-bottom-3 before:h-1 before:bg-blue-600"
+              >
                 <span className="no-underline">Check Us</span>
               </span>
 
@@ -84,12 +90,12 @@ const About = ({ navbarHeight }) => {
               <img
                 src={micIcon}
                 alt=""
-                className="absolute hidden 2xl:block 2xl:w-50 -bottom-3 left-97"
+                className="absolute hidden md:block md:w-40 2xl:w-50 md:bottom-30 2xl:bottom-0 md:left-92 2xl:left-97"
               />
             </div>
 
             {/* Right: Description */}
-            <div className="text-left text-[0.55rem] sm:text-[0.65rem] md:text-[0.7rem] lg:text-[0.8rem] 2xl:text-[0.9rem] text-white max-w-7xl lg:w-[50%]">
+            <div className="text-left text-[0.55rem] sm:text-[0.65rem] md:text-[0.75rem] lg:text-[0.8rem] 2xl:text-[0.9rem] text-white max-w-7xl md:w-[35%] 2xl:w-[50%]">
               <strong>
                 <p className="mb-4">
                   In this episode of The Arun Mukherjee Show, we sit down with
@@ -101,7 +107,7 @@ const About = ({ navbarHeight }) => {
                   manage the backend support for this very podcast!
                 </p>
 
-                <p className="font-semibold">We dive deep into:</p>
+                <p className="">We dive deep into:</p>
                 <ul className="list-disc list-inside ml-4 my-3">
                   <li>
                     Their entrepreneurial journey and how they started so young
@@ -133,14 +139,14 @@ const About = ({ navbarHeight }) => {
               <img
                 src={booksStack}
                 alt="Books"
-                className="absolute -bottom-7 left-5 hidden 2xl:block 2xl:w-[240px] z-10"
+                className="absolute bottom-0 left-5 hidden md:block md:w-[250px] 2xl:w-[240px] z-10"
               />
 
               {/* Hand/Thumb Image at Middle-Right */}
               <img
                 src={ratingHand}
                 alt="Thumb Rating"
-                className="absolute top-85 -right-10 -translate-y-1/2 hidden 2xl:block 2xl:w-[350px] z-10 "
+                className="absolute top-85 right-0 -translate-y-1/2 hidden md:block md:w-[250px] xl:w-[350px] z-10 overflow-x-hidden"
               />
             </div>
           </div>

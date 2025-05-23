@@ -20,7 +20,7 @@ const Working = ({ navbarHeight }) => {
         className="relative w-full h-full"
         style={{
           minHeight: `calc(100vh - ${offsetTop}px)`,
-          backgroundImage: `url(${bgPaper})`,
+          backgroundImage: `linear-gradient(rgba(217, 232, 246, 0.5), rgba(217, 232, 246, 0.5)),url(${bgPaper})`,
           backgroundRepeat: "repeat",
           backgroundSize: "cover",
         }}
@@ -59,13 +59,12 @@ const Working = ({ navbarHeight }) => {
         <div className="pt-[18px] md:pt-[40px] flex flex-col items-center justify-center px-4 max-w-5xl mx-auto">
           {/* How We Work Header */}
           <div className="w-full text-center">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-600 mb-2 flex items-center justify-center">
-              <span className="mr-2">How</span>
-              <span className="underline text-blue-600 font-bold">We work</span>
+            <h1 className="text-md sm:text-xl md:text-5xl font-bold text-[#035BFF] drop-shadow-lg z-20 mb-6">
+              How <span className="double-underline">We Work</span>
             </h1>
 
             <div className="flex items-center justify-center mb-6">
-              <p className="text-blue-600 font-bold text-sm md:text-[1.35rem]">
+              <p className="text-blue-600 font-bold text-sm md:text-2xl">
                 We believe the best ideas don't start with a pitch —{" "}
                 <em className="text-blue-600 font-bold">
                   they start with listening
@@ -77,19 +76,19 @@ const Working = ({ navbarHeight }) => {
 
           <div className="w-full flex flex-col lg:flex-row">
             {/* Left side: Process steps */}
-            <div className="w-[75%]  text-blue-600 font-bold px-20">
-              <div className="flex mb-10">
-                <div className="flex-shrink-0 mr-4">
-                  <div className="bg-blue-600 rounded-full p-4 w-12 h-12 md:w-15 md:h-15 flex items-center justify-center">
+            <div className="w-[75%]  font-bold px-20">
+              <div className="flex ">
+                <div className="flex-shrink-0 mr-4 pt-1">
+                  <div className="bg-blue-600 rounded-full w-12 h-12 md:w-15 md:h-15 flex items-center justify-center">
                     <img
                       src={rocketIcon}
                       alt="Strategy Icon"
-                      className="w-6 h-6 md:w-8 md:h-8"
+                      className="w-6 h-6 md:w-8 md:h-8 filter invert"
                     />
                   </div>
                 </div>
                 <div>
-                  <p className="text-sm md:text-base">
+                  <p className="text-sm md:text-base text-[#005AE0]">
                     Before we dive into strategies or designs, we take time to
                     understand your brand — where you are now, where you want to
                     go, and what might be standing in the way.
@@ -97,20 +96,20 @@ const Working = ({ navbarHeight }) => {
                 </div>
               </div>
 
-              <div className="w-full border-l-2 border-blue-600 ml-8 h-10"></div>
+              <div className="w-full border-l-2 border-blue-600 ml-7 h-20"></div>
 
-              <div className="flex mb-10">
-                <div className="flex-shrink-0 mr-4">
+              <div className="flex ">
+                <div className="flex-shrink-0 mr-4 pt-1">
                   <div className="bg-blue-600 rounded-full p-4 w-12 h-12 md:w-15 md:h-15 flex items-center justify-center">
                     <img
                       src={targetIcon}
                       alt="Target Icon"
-                      className="w-6 h-6 md:w-8 md:h-8"
+                      className="w-6 h-6 md:w-8 md:h-8 filter invert"
                     />
                   </div>
                 </div>
                 <div>
-                  <p className="text-sm md:text-base">
+                  <p className="text-sm md:text-base text-[#005AE0]">
                     Once we're aligned, we build a plan that's made just for
                     you. No shortcuts, no trends for the sake of it — just
                     thoughtful work that clicks with your audience and delivers
@@ -119,20 +118,20 @@ const Working = ({ navbarHeight }) => {
                 </div>
               </div>
 
-              <div className="w-full border-l-2 border-blue-600 ml-8 h-10"></div>
+              <div className="w-full border-l-2 border-blue-600 ml-7 h-20"></div>
 
               <div className="flex mb-10">
-                <div className="flex-shrink-0 mr-4">
+                <div className="flex-shrink-0 mr-4 pt-1">
                   <div className="bg-blue-600 rounded-full p-4 w-12 h-12 md:w-15 md:h-15 flex items-center justify-center">
                     <img
                       src={strategyIcon}
                       alt="Strategy Icon"
-                      className="w-6 h-6 md:w-8 md:h-8"
+                      className="w-6 h-6 md:w-8 md:h-8 filter invert"
                     />
                   </div>
                 </div>
                 <div>
-                  <p className="text-sm md:text-base">
+                  <p className="text-sm md:text-base text-[#005AE0]">
                     Once we're aligned, we build a plan that's made just for
                     you. No shortcuts, no trends for the sake of it — just
                     thoughtful work that clicks with your audience and delivers
@@ -147,21 +146,21 @@ const Working = ({ navbarHeight }) => {
           <img
             src={eyeIcon}
             alt=""
-            className="absolute left-0 top-[0] z-0 hidden xl:block xl:w-60 ml-30 -mt-5"
+            className="absolute left-0 top-[0] z-0 hidden xl:block 2xl:w-60 2xl:ml-30 2xl:mt-5 xl:w-55 xl:ml-25"
           />
         </div>
         <div>
           <img
             src={mobile}
             alt=""
-            className="absolute left-0 bottom-[0] z-0 hidden xl:block xl:w-90 -mb-10"
+            className="absolute left-0 bottom-0 z-0 hidden xl:block xl:w-90 "
           />
         </div>
         <div>
           <img
             src={audience}
             alt=""
-            className="absolute right-0 top-[15%] z-0 hidden xl:block xl:w-135"
+            className="absolute right-0 top-[12%] z-0 hidden xl:block xl:w-135"
           />
         </div>
       </div>

@@ -4,12 +4,18 @@ import bgCard from "../assets/services-bgcard.png";
 import bulb from "../assets/services-handbulb.png";
 import comment from "../assets/services-handcomments.png";
 import puzzle from "../assets/services-handpuzzle.png";
+import branding from "../assets/services-branding.png";
+import social from "../assets/services-social.png";
+import web from "../assets/services-web.png";
+import media from "../assets/services-media.png";
+import marketing from "../assets/services-marketing.png";
+import seo from "../assets/services-seo.png";
 
 const About = ({ navbarHeight }) => {
   const offsetTop = navbarHeight * 1.2;
 
   return (
-    <div className="w-full min-h-screen relative bg-transparent">
+    <div className="w-full min-h-screen relative bg-transparent ">
       {/* Top transparent spacer */}
       <div style={{ height: offsetTop }} />
 
@@ -18,7 +24,7 @@ const About = ({ navbarHeight }) => {
         className="relative w-full h-full"
         style={{
           minHeight: `calc(100vh - ${offsetTop}px)`,
-          backgroundImage: `url(${bgPaper})`,
+          backgroundImage: `linear-gradient(rgba(217, 232, 246, 0.5), rgba(217, 232, 246, 0.5)),url(${bgPaper})`,
           backgroundRepeat: "repeat",
           backgroundSize: "cover",
         }}
@@ -56,23 +62,26 @@ const About = ({ navbarHeight }) => {
         {/* Content starts after the torn strip */}
         <div className="pt-[18px] md:pt-[35px] flex flex-col items-center justify-center text-center px-4">
           {/* Title */}
-          <h1 className="text-md sm:text-xl md:text-4xl font-bold text-[#035BFF] drop-shadow-lg z-20 mb-6">
-            Our <span className="underline decoration-[#035BFF]">Services</span>
+          <h1 className="text-md sm:text-xl md:text-5xl font-bold text-[#035BFF] drop-shadow-lg z-20 mb-6">
+            Our <span className="double-underline">Services</span>
           </h1>
 
           {/* Services Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl z-10">
             {[
-              { title: "Branding & Identity", img: "branding.png" },
-              { title: "Social Media Marketing", img: "social.png" },
-              { title: "Web Development", img: "web.png" },
-              { title: "Visual Media", img: "visual.png" },
-              { title: "Marketing 360", img: "marketing.png" },
-              { title: "SEO & Paid Performance", img: "seo.png" },
+              { title: "Branding & Identity", img: branding },
+              { title: "Social Media Marketing", img: social },
+              { title: "Web Development", img: web },
+              { title: "Visual Media", img: media },
+              { title: "Marketing 360", img: marketing },
+              { title: "SEO & Paid Performance", img: seo },
             ].map((service, i) => (
               <div
                 key={i}
-                className="bg-white shadow-xl  rounded-md overflow-hidden w-[210px] h-[225px] mx-auto border-[3px] border-white p-2"
+                className="bg-white shadow-xl  rounded-md overflow-hidden w-[182px] h-[221px] mx-auto border-[3px] border-white p-2"
+                style={{
+                  boxShadow: "-2px 2px 4px rgba(0, 0, 0, 0.4)",
+                }}
               >
                 <div
                   className="h-[75%] bg-black flex items-center justify-center"
@@ -84,12 +93,12 @@ const About = ({ navbarHeight }) => {
                   }}
                 >
                   <img
-                    src={bgPaper}
+                    src={service.img}
                     alt={service.title}
-                    className="w-[50%] h-auto object-contain"
+                    className="w-[50%] h-auto object-contain "
                   />
                 </div>
-                <div className="h-[25%] bg-white text-md font-bold text-[#035BFF] flex items-center justify-center px-2 text-center">
+                <div className="h-[25%] bg-white text-sm font-bold text-[#137CFE] flex items-center justify-center px-2 text-center">
                   {service.title}
                 </div>
               </div>
@@ -97,14 +106,26 @@ const About = ({ navbarHeight }) => {
           </div>
 
           {/* Decorative hands/elements (optional, based on your layout) */}
-          <div className="absolute left-0 bottom-[30%] z-0 hidden xl:block xl:w-100 rotate-18 -ml-10">
-            <img src={comment} alt="hand left" />
+          <div className="absolute left-10 bottom-[20%] z-0 hidden xl:block xl:w-80 2xl:w-100 rotate-18 ">
+            <img
+              src={comment}
+              alt="hand left"
+              className="relative left-[-35%]"
+            />
           </div>
-          <div className="absolute right-0 -top-5 z-0 hidden xl:block xl:w-95 -rotate-25 -mr-20">
-            <img src={puzzle} alt="hand right" />
+          <div className="absolute right-0 top-5 z-0 hidden xl:block xl:w-75 2xl:x-95  overflow-hidden">
+            <img
+              src={puzzle}
+              alt="hand right"
+              className="-rotate-25 translate-x-12"
+            />
           </div>
-          <div className="absolute right-5 -bottom-2 z-0 hidden xl:block xl:w-58 ">
-            <img src={bulb} alt="hand right" />
+          <div className="absolute right-5 bottom-2 z-0 hidden xl:block xl:w-58 ">
+            <img
+              src={bulb}
+              alt="hand right"
+              className="relative bottom-[-40%]"
+            />
           </div>
         </div>
       </div>
