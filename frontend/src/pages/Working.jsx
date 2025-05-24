@@ -66,7 +66,7 @@ const Working = ({ navbarHeight }) => {
             <div className="flex items-center justify-center mb-6">
               <p className="text-blue-600 font-bold text-sm md:text-2xl">
                 We believe the best ideas don't start with a pitch —{" "}
-                <em className="text-blue-600 font-bold">
+                <em className="text-blue-600 font-black">
                   they start with listening
                 </em>
                 .
@@ -88,7 +88,7 @@ const Working = ({ navbarHeight }) => {
                   </div>
                 </div>
                 <div>
-                  <p className="text-sm md:text-base text-[#005AE0]">
+                  <p className="text-sm md:text-lg font-normal leading-[1.2] text-[#005AE0]">
                     Before we dive into strategies or designs, we take time to
                     understand your brand — where you are now, where you want to
                     go, and what might be standing in the way.
@@ -109,7 +109,7 @@ const Working = ({ navbarHeight }) => {
                   </div>
                 </div>
                 <div>
-                  <p className="text-sm md:text-base text-[#005AE0]">
+                  <p className="text-sm md:text-lg font-normal leading-[1.2] text-[#005AE0]">
                     Once we're aligned, we build a plan that's made just for
                     you. No shortcuts, no trends for the sake of it — just
                     thoughtful work that clicks with your audience and delivers
@@ -131,7 +131,7 @@ const Working = ({ navbarHeight }) => {
                   </div>
                 </div>
                 <div>
-                  <p className="text-sm md:text-base text-[#005AE0]">
+                  <p className="text-sm md:text-lg font-normal leading-[1.2] text-[#005AE0]">
                     Once we're aligned, we build a plan that's made just for
                     you. No shortcuts, no trends for the sake of it — just
                     thoughtful work that clicks with your audience and delivers

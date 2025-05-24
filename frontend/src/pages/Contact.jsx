@@ -3,6 +3,7 @@ import bgPaper from "../assets/blackboard.png";
 import influconCard from "../assets/contact-card.png";
 import rocketImage from "../assets/contact-hand.png";
 import last from "../assets/contact-last.png";
+import logo from "../assets/logo.png";
 
 const Contact = ({ navbarHeight }) => {
   const offsetTop = navbarHeight * 1.2;
@@ -20,7 +21,7 @@ const Contact = ({ navbarHeight }) => {
           backgroundImage: `url(${bgPaper})`,
           backgroundRepeat: "repeat",
           backgroundSize: "cover",
-          paddingBottom: "160px", // extra space for CTA to fit
+          paddingBottom: "160px",
         }}
       >
         {/* Torn strips */}
@@ -42,24 +43,32 @@ const Contact = ({ navbarHeight }) => {
 
         {/* Main Content */}
         <div className="pt-[18px] md:pt-[20px] flex justify-center px-4 max-w-[90rem]">
-          <div>
+          <div className="relative w-32 md:w-48 lg:w-[32rem]">
+            {/* Card */}
             <img
               src={influconCard}
               alt="Digital Revolution Rocket"
-              className="w-32 md:w-48 lg:w-130"
+              className="w-full"
+            />
+            {/* Logo centered on card */}
+            <img
+              src={logo}
+              alt="Logo"
+              className="absolute top-40 left-1/2 w-16 md:w-50 transform -translate-x-1/2 -translate-y-1/2"
             />
           </div>
-          <div className="w-full pt-20">
-            <div className="flex flex-col lg:flex-row items-center justify-between mb-12">
+
+          <div className="w-full pt-30">
+            <div className="flex flex-col lg:flex-row items-center justify-between mb-12 2xl:mb-5">
               <div className="text-center text-white mb-8 lg:mb-0">
                 <h1 className="text-2xl md:text-5xl font-bold text-white drop-shadow-lg z-20">
                   Become part of the{" "}
                   <span
                     className="
-      relative text-blue-500 mr-2
-      after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2.5px] after:bg-white
-      before:content-[''] before:absolute before:left-0 before:right-0 before:bottom-[-8px] before:h-[2.5px] before:bg-white
-    "
+                      relative text-blue-500 mr-2
+                      after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2.5px] after:bg-white
+                      before:content-[''] before:absolute before:left-0 before:right-0 before:bottom-[-8px] before:h-[2.5px] before:bg-white
+                    "
                   >
                     Digital
                   </span>
@@ -71,7 +80,7 @@ const Contact = ({ navbarHeight }) => {
             {/* Footer Links */}
             <div className="grid grid-cols-1 md:grid-cols-3 max-w-3xl text-white pl-7 pt-12">
               <div>
-                <h3 className="text-xl font-bold mb-6">Navigation</h3>
+                <h3 className="text-2xl font-bold mb-6">Navigation</h3>
                 <ul className="space-y-3">
                   {[
                     "Service",
@@ -92,7 +101,7 @@ const Contact = ({ navbarHeight }) => {
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-6">License</h3>
+                <h3 className="text-2xl font-bold mb-6">License</h3>
                 <ul className="space-y-3">
                   {["Privacy Policy", "Copyright", "Email Address"].map(
                     (item, idx) => (
@@ -109,7 +118,7 @@ const Contact = ({ navbarHeight }) => {
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-6">Contact</h3>
+                <h3 className="text-2xl font-bold mb-6">Contact</h3>
                 <ul className="space-y-3">
                   <li className="flex items-center">
                     <svg
@@ -168,8 +177,8 @@ const Contact = ({ navbarHeight }) => {
             backgroundPosition: "center",
           }}
         >
-          <div className="h-1 bg-blue-700 "></div>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-10 py-6  border-t border-white h-full">
+          <div className="h-1 bg-blue-700"></div>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-10 py-6 border-t border-white h-full">
             <h2 className="text-2xl md:text-5xl font-bold text-white text-center mb-4 md:mb-0">
               Ready to work with us ?
             </h2>

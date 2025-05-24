@@ -95,46 +95,40 @@ const About = ({ navbarHeight }) => {
             </div>
 
             {/* Right: Description */}
-            <div className="text-left text-[0.55rem] sm:text-[0.65rem] md:text-[0.75rem] lg:text-[0.8rem] 2xl:text-[0.9rem] text-white max-w-7xl md:w-[35%] 2xl:w-[50%]">
-              <strong>
-                <p className="mb-4">
-                  In this episode of The Arun Mukherjee Show, we sit down with
-                  the 22-year-old founders of InfluCon Digitals, a fast-growing
-                  digital marketing, web development, and software & app
-                  development company based in Kolkata.These young
-                  entrepreneurs, Raunak Mitra and Suryajabho Deb, not only run a
-                  thriving agency with a team of 15 people but also own and
-                  manage the backend support for this very podcast!
-                </p>
+            <div className="text-left text-[0.55rem] sm:text-[0.65rem] md:text-[0.75rem] lg:text-[0.8rem] 2xl:text-[0.9rem] text-white max-w-7xl xl:w-[38%] 2xl:w-[50%] font-bold leading-[1.4]">
+              <p className="mb-4">
+                In this episode of The Arun Mukherjee Show, we sit down with the
+                22-year-old founders of InfluCon Digitals, a fast-growing
+                digital marketing, web development, and software & app
+                development company based in Kolkata.These young entrepreneurs,
+                Raunak Mitra and Suryajabho Deb, not only run a thriving agency
+                with a team of 15 people but also own and manage the backend
+                support for this very podcast!
+              </p>
 
-                <p className="">We dive deep into:</p>
-                <ul className="list-disc list-inside ml-4 my-3">
-                  <li>
-                    Their entrepreneurial journey and how they started so young
-                  </li>
-                  <li>
-                    Managing operations, clients, and revenue in a competitive
-                    industry
-                  </li>
-                  <li>
-                    Why most agencies fail and how to avoid common pitfalls
-                  </li>
-                  <li>
-                    How they led a 15-member team while staying innovative
-                  </li>
-                  <li>
-                    Tips for surviving and thriving in a hyper-competitive
-                    digital market
-                  </li>
-                </ul>
+              <p className="">We dive deep into:</p>
+              <ul className="list-disc list-inside ml-4 my-3">
+                <li>
+                  Their entrepreneurial journey and how they started so young
+                </li>
+                <li>
+                  Managing operations, clients, and revenue in a competitive
+                  industry
+                </li>
+                <li>Why most agencies fail and how to avoid common pitfalls</li>
+                <li>How they led a 15-member team while staying innovative</li>
+                <li>
+                  Tips for surviving and thriving in a hyper-competitive digital
+                  market
+                </li>
+              </ul>
 
-                <p className="mt-4">
-                  If you’re an aspiring entrepreneur, a business owner, or
-                  someone curious about what it takes to build a successful
-                  agency in today’s fast-paced world—
-                  <strong> this episode is a must-watch!</strong>
-                </p>
-              </strong>
+              <p className="mt-4">
+                If you’re an aspiring entrepreneur, a business owner, or someone
+                curious about what it takes to build a successful agency in
+                today’s fast-paced world— this episode is a must-watch!
+              </p>
+
               {/* Book Image at Bottom-Left */}
               <img
                 src={booksStack}
@@ -143,12 +137,14 @@ const About = ({ navbarHeight }) => {
               />
 
               {/* Hand/Thumb Image at Middle-Right */}
-              <img
-                src={ratingHand}
-                alt="Thumb Rating"
-                className="absolute top-85 right-0 -translate-y-1/2 hidden md:block md:w-[250px] xl:w-[350px] z-10 overflow-x-hidden"
-              />
             </div>
+          </div>
+          <div className="absolute xl:right-0 xl:top-35 2xl:right-0 2xl:bottom-20 z-0 hidden xl:block xl:w-85 2xl:x-95  overflow-hidden">
+            <img
+              src={ratingHand}
+              alt="hand right"
+              className="-rotate-8 translate-x-10"
+            />
           </div>
         </div>
       </div>

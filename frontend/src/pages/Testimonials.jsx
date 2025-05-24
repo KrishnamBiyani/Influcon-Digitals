@@ -1,5 +1,6 @@
 import tornTop from "../assets/tornPage.png";
 import bgPaper from "../assets/blackboard.png";
+import white from "../assets/white-bg.png";
 import heartPhone from "../assets/testimonials-heart.png"; // The phone with heart icon
 import megaphone from "../assets/testimonials-speaker.png"; // The megaphone icon
 // Profile images for testimonials
@@ -59,7 +60,7 @@ const Testimonials = ({ navbarHeight }) => {
         <div className="pt-[18px] md:pt-[45px] flex flex-col items-center justify-center px-4 max-w-7xl mx-auto">
           {/* Client Testimonials Header */}
           <div className="w-full text-center mb-8">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-2">
               <span
                 className="relative inline-block
              after:content-['']
@@ -75,23 +76,26 @@ const Testimonials = ({ navbarHeight }) => {
           </div>
 
           {/* Testimonial Cards */}
-          <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-5">
+          <div className="w-[92%] grid grid-cols-1 md:grid-cols-3 mt-2">
             {/* Testimonial 1 */}
-            <div className="bg-gray-100 rounded-xl p-5 shadow-xl h-auto xl:h-[270px] xl:w-[360px] md:h-70">
+            <div
+              className="rounded-xl p-5 shadow-xl h-auto xl:h-[270px] xl:w-[360px] md:h-70"
+              style={{ backgroundImage: `url(${white})` }}
+            >
               <div className="flex items-center mb-4">
                 <img
                   src={neetoProfile}
                   alt="Neeto Kachalia"
                   className="w-10 h-10 md:w-9 md:h-9 rounded-full mr-3"
                 />
-                <span className="font-medium text-gray-800 text-lg">
+                <span className="font-bold text-[#005AE0] text-lg">
                   Neeto Kachalia
                 </span>
               </div>
               <h3 className="font-bold text-gray-900 mb-3 text-xl md:text-xl">
                 How Influcon helped my business go viral.
               </h3>
-              <p className="text-gray-700 text-base md:text-sm">
+              <p className="text-[#313131] text-base md:text-sm leading-[1.2]">
                 As a leading digital marketing agency, we partnered with
                 Influcon Digital to revise their brand presence. The results
                 were beyond our expectations and goals.
@@ -99,21 +103,24 @@ const Testimonials = ({ navbarHeight }) => {
             </div>
 
             {/* Testimonial 2 */}
-            <div className="bg-gray-100 rounded-xl p-5 shadow-xl h-auto xl:h-[270px] xl:w-[360px] md:h-70">
+            <div
+              className="rounded-xl p-5 shadow-xl h-auto xl:h-[270px] xl:w-[360px] md:h-70"
+              style={{ backgroundImage: `url(${white})` }}
+            >
               <div className="flex items-center mb-4">
                 <img
                   src={adityaProfile}
                   alt="Aditya Sharma"
                   className="w-10 h-10 md:w-9 md:h-9 rounded-full mr-3"
                 />
-                <span className="font-medium text-gray-800 text-lg">
+                <span className="font-bold text-[#005AE0] text-lg">
                   Aditya Sharma
                 </span>
               </div>
               <h3 className="font-bold text-gray-900 mb-3 text-xl md:text-xl">
                 How DigitalBoost transformed my startup's reach.
               </h3>
-              <p className="text-gray-700 text-base md:text-sm">
+              <p className="text-[#313131] text-base md:text-sm leading-[1.2]">
                 As a premier digital marketing firm, we collaborated with
                 InfluCon to enhance online visibility. Our partnership led to
                 exceptional growth and market results.
@@ -121,21 +128,24 @@ const Testimonials = ({ navbarHeight }) => {
             </div>
 
             {/* Testimonial 3 */}
-            <div className="bg-gray-100 rounded-xl p-5 shadow-xl h-auto xl:h-[270px] xl:w-[360px] md:h-70">
+            <div
+              className="rounded-xl p-5 shadow-xl h-auto xl:h-[270px] xl:w-[360px] md:h-70"
+              style={{ backgroundImage: `url(${white})` }}
+            >
               <div className="flex items-center mb-4">
                 <img
                   src={riyaProfile}
                   alt="Riya Malhotra"
                   className="w-9 h-9 md:w-9 md:h-9 rounded-full mr-3"
                 />
-                <span className="font-medium text-gray-800 text-lg">
+                <span className="font-bold text-[#005AE0] text-lg">
                   Riya Malhotra
                 </span>
               </div>
               <h3 className="font-bold text-gray-900 mb-3 text-xl md:text-xl">
                 How my brand skyrocketed with Influcon's expertise.
               </h3>
-              <p className="text-gray-700 text-base md:text-sm">
+              <p className="text-[#313131] text-base md:text-sm leading-[1.2]">
                 As a top-tier digital marketing agency, we collaborated with
                 Influcon Digi to amplify their market presence. The results
                 achieved exceeded our expectations and goals.

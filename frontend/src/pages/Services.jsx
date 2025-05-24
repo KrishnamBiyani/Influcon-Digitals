@@ -84,7 +84,7 @@ const About = ({ navbarHeight }) => {
                 }}
               >
                 <div
-                  className="h-[75%] bg-black flex items-center justify-center"
+                  className="h-[82%] bg-black flex items-center justify-center"
                   style={{
                     backgroundImage: `url(${bgCard})`,
                     backgroundSize: "cover",
@@ -98,7 +98,7 @@ const About = ({ navbarHeight }) => {
                     className="w-[50%] h-auto object-contain "
                   />
                 </div>
-                <div className="h-[25%] bg-white text-sm font-bold text-[#137CFE] flex items-center justify-center px-2 text-center">
+                <div className="h-[22%] bg-white text-sm font-bold text-[#137CFE] flex items-center justify-center px-2 text-center ">
                   {service.title}
                 </div>
               </div>

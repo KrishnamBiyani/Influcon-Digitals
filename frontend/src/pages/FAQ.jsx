@@ -2,6 +2,7 @@ import tornTop from "../assets/tornPage.png";
 import bgPaper from "../assets/white-bg.png";
 import black from "../assets/blackboard.png";
 import handshakeImage from "../assets/FAQ-handshake.png";
+import text from "../assets/FAQ-text.png";
 
 const FAQ = ({ navbarHeight }) => {
   const offsetTop = navbarHeight * 1.2;
@@ -62,11 +63,10 @@ const FAQ = ({ navbarHeight }) => {
               </h1>
 
               {/* Description */}
-              <p className="text-base md:text-base mb-6 leading-relaxed text-[#005AE0]">
-                Find clear, insightful answers to the most common questions
-                about digital marketing. Our comprehensive educational resource
-                covers everything from frequently asked questions to help our
-                clients.
+              <p className="text-base md:text-base mb-6 leading-[1.8] text-[#005AE0] font-medium">
+                As a leading digital marketing agency, we are dedicated to
+                providing comprehensive educational resources and answering
+                frequently asked questions to help our clients.
               </p>
 
               {/* Contact Button */}
@@ -93,13 +93,13 @@ const FAQ = ({ navbarHeight }) => {
               </button>
 
               {/* Handshake Image */}
-              <div className="justify-center lg:justify-start border lg:block hidden">
+              {/* <div className="justify-center lg:justify-start border lg:block hidden">
                 <img
                   src={handshakeImage}
                   alt="Business Handshake with Laptop"
                   className="w-full filter"
                 />
-              </div>
+              </div> */}
             </div>
 
             {/* Right Side - FAQs and Contact Form */}
@@ -114,13 +114,13 @@ const FAQ = ({ navbarHeight }) => {
                     </h3>
                     <span className="text-2xl font-bold">+</span>
                   </div>
-                  <p className="text-sm  mt-2 text-[#878C91]">
+                  <p className="text-sm leading-[1.2] mt-2 text-[#878C91]">
                     Digital marketing allows businesses to reach and engage with
-                    a broader audience, generate leads, drive website traffic,
-                    increase brand awareness, and ultimately grow their customer
-                    base through targeted marketing efforts, and enables
-                    businesses to adapt to changing consumer behavior and market
-                    trends.
+                    a wider audience, generate leads, drive website traffic, and
+                    increase brand visibility. It provides measurable results,
+                    allows for targeted marketing efforts, and enables
+                    businesses to adapt and optimize their strategies based on
+                    data and insights.
                   </p>
                 </div>
 
@@ -158,7 +158,7 @@ const FAQ = ({ navbarHeight }) => {
                 />
               </div>
               <div className="flex justify-between items-center mt-4">
-                <p className="text-sm text-[#005AE0]">
+                <p className="text-sm font-normal text-[#005AE0]">
                   We will answer your questions via email within 48 hours.
                 </p>
                 <button
@@ -185,16 +185,12 @@ const FAQ = ({ navbarHeight }) => {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="absolute text-left mb-8 top-9 right-0">
-          <h2 className="text-lg xl:text-xl 2xl:text-xl  font-bold text-blue-600 ">
-            TOGETHER
-          </h2>
-          <h5 className="text-lg xl:text-xl 2xl:text-xl">WE CAN MAKE A</h5>
-          <h2 className="text-lg xl:text-xl 2xl:text-xl font-bold text-blue-800 ">
-            DIFFERENCE
-          </h2>
+          <div className="absolute right-0 top-12 z-0 hidden xl:block xl:w-50 2xl:w-42  overflow-hidden">
+            <img src={text} alt="hand right" className="" />
+          </div>
+          <div className="absolute xl:left-14 xl:bottom-6 2xl:left-30 2xl:bottom-8 z-0 hidden xl:block xl:w-148 2xl:w-110  overflow-hidden">
+            <img src={handshakeImage} alt="hand right" className="" />
+          </div>
         </div>
       </div>
     </div>
