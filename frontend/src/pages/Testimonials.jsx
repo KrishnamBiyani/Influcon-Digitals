@@ -76,7 +76,7 @@ const Testimonials = ({ navbarHeight }) => {
           </div>
 
           {/* Testimonial Cards */}
-          <div className="w-[92%] grid grid-cols-1 md:grid-cols-3 mt-2">
+          <div className="w-[92%] grid grid-cols-1 md:grid-cols-3 mt-2 z-1">
             {/* Testimonial 1 */}
             <div
               className="rounded-xl p-5 shadow-xl h-auto xl:h-[270px] xl:w-[360px] md:h-70"
@@ -97,8 +97,8 @@ const Testimonials = ({ navbarHeight }) => {
               </h3>
               <p className="text-[#313131] text-base md:text-sm leading-[1.2]">
                 As a leading digital marketing agency, we partnered with
-                Influcon Digital to revise their brand presence. The results
-                were beyond our expectations and goals.
+                Innovate Corp to elevate their brand presence. Our comprehensive
+                strategies have driven remarkable results.
               </p>
             </div>
 
@@ -122,8 +122,8 @@ const Testimonials = ({ navbarHeight }) => {
               </h3>
               <p className="text-[#313131] text-base md:text-sm leading-[1.2]">
                 As a premier digital marketing firm, we collaborated with
-                InfluCon to enhance online visibility. Our partnership led to
-                exceptional growth and market results.
+                INFLUCON. to enhance their online visibility. Our tailored
+                strategies have yielded outstanding outcomes.
               </p>
             </div>
 
@@ -147,8 +147,8 @@ const Testimonials = ({ navbarHeight }) => {
               </h3>
               <p className="text-[#313131] text-base md:text-sm leading-[1.2]">
                 As a top-tier digital marketing agency, we collaborated with
-                Influcon Digi to amplify their market presence. The results
-                achieved exceeded our expectations and goals.
+                Visionary Tech to amplify their market presence. Our innovative
+                strategies have achieved exceptional results.
               </p>
             </div>
           </div>
@@ -180,8 +180,12 @@ const Testimonials = ({ navbarHeight }) => {
             </div>
           </div>
 
-          <div className="absolute right-0 top-5 z-0 hidden xl:block xl:w-55 2xl:x-95  overflow-hidden">
-            <img src={heartPhone} alt="hand right" className="translate-x-8" />
+          <div className="absolute right-0 top-0 z-0 hidden xl:block xl:w-68 2xl:w-88  overflow-hidden">
+            <img
+              src={heartPhone}
+              alt="hand right"
+              className="translate-x-12 -rotate-3"
+            />
           </div>
         </div>
       </div>

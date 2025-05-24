@@ -55,12 +55,16 @@ const Welcome = ({ navbarHeight }) => {
 
           {/* Monitor image and description */}
           <div className="flex flex-col md:flex-row items-center justify-center ">
-            <p className="text-sm md:text-xl text-[#1E1F21] font-normal max-w-[38rem] z-20 text-left leading-[1.2]">
-              Your <strong>Growth Partner</strong> in the Digital Era
+            <p className="text-sm md:text-xl text-[#1E1F21] font-normal max-w-[38rem] z-20 text-left leading-[1.2] ">
+              Your{" "}
+              <strong>
+                <em>Growth Partner</em>
+              </strong>{" "}
+              in the Digital Era
               <br />
               At InfluCon Digitals, we don’t just{" "}
               <strong>
-                build brands — <em>we grow them</em>.
+                <em>build brands — we grow them</em>.
               </strong>
               <br />
               Based in the heart of Kolkata, we are a full-service digital
@@ -84,7 +88,10 @@ const Welcome = ({ navbarHeight }) => {
             <div className="text-left">
               <p className="text-sm md:text-xl text-[#1E1F21] font-normal max-w-xl z-20 pr-2 leading-[1.2]">
                 From launching bold start-ups to elevating established brands,
-                we bring strategy, creativity, and <strong>performance</strong>{" "}
+                we bring strategy, creativity, and{" "}
+                <strong>
+                  <em>performance</em>
+                </strong>{" "}
                 together to create campaigns that convert and designs that leave{" "}
                 <strong>
                   <em>lasting impressions</em>.

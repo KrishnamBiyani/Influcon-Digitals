@@ -100,8 +100,8 @@ const About = ({ navbarHeight }) => {
                 In this episode of The Arun Mukherjee Show, we sit down with the
                 22-year-old founders of InfluCon Digitals, a fast-growing
                 digital marketing, web development, and software & app
-                development company based in Kolkata.These young entrepreneurs,
-                Raunak Mitra and Suryajabho Deb, not only run a thriving agency
+                development company based in Kolkata. These young entrepreneurs,
+                Raunak Mitra and Surjyabho Deb, not only run a thriving agency
                 with a team of 15 people but also own and manage the backend
                 support for this very podcast!
               </p>
@@ -124,9 +124,9 @@ const About = ({ navbarHeight }) => {
               </ul>
 
               <p className="mt-4">
-                If you’re an aspiring entrepreneur, a business owner, or someone
+                If you're an aspiring entrepreneur, a business owner, or someone
                 curious about what it takes to build a successful agency in
-                today’s fast-paced world— this episode is a must-watch!
+                today's fast-paced world—this episode is a must-watch!
               </p>
 
               {/* Book Image at Bottom-Left */}

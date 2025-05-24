@@ -110,7 +110,7 @@ const Working = ({ navbarHeight }) => {
                 </div>
                 <div>
                   <p className="text-sm md:text-lg font-normal leading-[1.2] text-[#005AE0]">
-                    Once we're aligned, we build a plan that's made just for
+                    Once we’re aligned, we build a plan that’s made just for
                     you. No shortcuts, no trends for the sake of it — just
                     thoughtful work that clicks with your audience and delivers
                     real results.
@@ -132,7 +132,7 @@ const Working = ({ navbarHeight }) => {
                 </div>
                 <div>
                   <p className="text-sm md:text-lg font-normal leading-[1.2] text-[#005AE0]">
-                    Once we're aligned, we build a plan that's made just for
+                    Once we’re aligned, we build a plan that’s made just for
                     you. No shortcuts, no trends for the sake of it — just
                     thoughtful work that clicks with your audience and delivers
                     real results.
