@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import tornpage from "../assets/tornPage.png";
 import blackboard from "../assets/blackboard.png";
+import bg from "../assets/menu-bg.png";
 
 const SideMenu = ({ isOpen, setIsOpen }) => {
   const menuRef = useRef();
@@ -33,12 +34,14 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
       style={{
         width: "50%",
         maxWidth: "50%",
-        height: "70vh",
-        backgroundColor: "transparent",
-        overflow: "hidden",
+        height: "67vh",
+        maxHeight: "67vh",
+        backgroundImage: `url(${bg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
-      <img
+      {/* <img
         src={tornpage}
         alt=""
         className="absolute -top-6  w-full scale-150 h-[40%]"
@@ -58,12 +61,20 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
         src={blackboard}
         alt=""
         className="-z-30 absolute top-23 w-full h-[70%]"
-      />
-      <div className="absolute top-[25%] left-0 w-full h-[50%] flex flex-col items-center justify-center z-10 text-white text-center">
-        <h2 className="text-2xl font-bold mb-4 underline underline-offset-4 decoration-yellow-400">
-          MENU
-        </h2>
-        <ul className="space-y-2 text-lg">
+      /> */}
+      <div className="absolute top-[18%] left-0 w-full h-[50%] flex flex-col items-center justify-center z-10 text-white text-center">
+        <h1 className="text-2xl sm:text-3xl md:text-[40px] font-bold text-white mb-4">
+          <span
+            className="relative inline-block
+             after:content-['']
+             after:absolute after:left-0 after:right-10 after:-bottom-3 after:h-1 after:bg-[#E0D100]
+             before:content-['']
+             before:absolute before:left-0 before:right-0 before:-bottom-1 before:h-1 before:bg-[#E0D100]"
+          >
+            <span className="no-underline">MENU</span>
+          </span>
+        </h1>
+        <ul className="space-y-2 text-2xl font-bold">
           <li>Home</li>
           <li>About Us</li>
           <li>Leadership Team</li>
@@ -73,7 +84,7 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
         </ul>
       </div>
 
-      <img
+      {/* <img
         src={tornpage}
         alt=""
         className="absolute -bottom-9  w-full scale-150 h-[40%]"
@@ -87,7 +98,7 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
         src={tornpage}
         alt=""
         className="absolute -bottom-18  w-full h-[40%]"
-      />
+      /> */}
     </div>
   );
 };
