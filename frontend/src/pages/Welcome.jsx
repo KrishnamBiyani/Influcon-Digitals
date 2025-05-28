@@ -47,7 +47,7 @@ const Welcome = ({ navbarHeight }) => {
         </div>
 
         {/* Main Content */}
-        <div className="pt-[75px] md:pt-[65px] flex flex-col items-center justify-center text-center px-4 ">
+        <div className="pt-[75px] md:pt-[55px] flex flex-col items-center justify-center text-center px-4 ">
           <h1 className="text-2xl md:text-5xl font-bold text-blue-700 drop-shadow-lg z-20">
             Welcome to <span className="double-underline mr-2">InfluCon</span>
             <span className="double-underline">Digitals</span>
@@ -99,7 +99,7 @@ const Welcome = ({ navbarHeight }) => {
               </p>
               <div className="flex space-x-5 md:space-x-8 mt-4 text-[#005AE0]  text-2xl md:text-4xl">
                 <div>
-                  <p className="font-black">20+</p>
+                  <p className="font-black ml-2">20+</p>
                   <p className="text-base md:text-2xl font-medium">Clients</p>
                 </div>
                 <div>
