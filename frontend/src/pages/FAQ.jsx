@@ -91,15 +91,6 @@ const FAQ = ({ navbarHeight }) => {
                   />
                 </svg>
               </button>
-
-              {/* Handshake Image */}
-              {/* <div className="justify-center lg:justify-start border lg:block hidden">
-                <img
-                  src={handshakeImage}
-                  alt="Business Handshake with Laptop"
-                  className="w-full filter"
-                />
-              </div> */}
             </div>
 
             {/* Right Side - FAQs and Contact Form */}

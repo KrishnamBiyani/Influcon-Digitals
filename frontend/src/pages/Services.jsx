@@ -11,7 +11,7 @@ import media from "../assets/services-media.png";
 import marketing from "../assets/services-marketing.png";
 import seo from "../assets/services-seo.png";
 
-const About = ({ navbarHeight }) => {
+const Services = ({ navbarHeight }) => {
   const offsetTop = navbarHeight * 1.2;
 
   return (
@@ -133,4 +133,4 @@ const About = ({ navbarHeight }) => {
   );
 };
 
-export default About;
+export default Services;

@@ -1,6 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import tornpage from "../assets/tornPage.png";
-import blackboard from "../assets/blackboard.png";
 import bg from "../assets/menu-bg.png";
 
 const SideMenu = ({ isOpen, setIsOpen }) => {
@@ -29,41 +27,22 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
       ref={menuRef}
       id="side-menu"
       className={`flex flex-col justify-between fixed top-1/2 right-0 transform -translate-y-1/2 transition-transform duration-300 overflow:hidden z-50 rounded-xl
-      ${isOpen ? "translate-x-[-50%]" : "translate-x-full"}
+      ${
+        isOpen
+          ? "xl:translate-x-[-270px] 2xl:translate-x-[-310px]"
+          : "translate-x-full"
+      }
     `}
       style={{
-        width: "50%",
-        maxWidth: "50%",
-        height: "67vh",
-        maxHeight: "67vh",
+        width: "904px",
+        height: "595px",
         backgroundImage: `url(${bg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      {/* <img
-        src={tornpage}
-        alt=""
-        className="absolute -top-6  w-full scale-150 h-[40%]"
-      />
-      <img
-        src={tornpage}
-        alt=""
-        className="absolute -top-2  w-full scale-150 h-[40%]"
-      />
-      <img
-        src={tornpage}
-        alt=""
-        className="absolute top-4  w-full h-[40%] scale-160"
-      />
-
-      <img
-        src={blackboard}
-        alt=""
-        className="-z-30 absolute top-23 w-full h-[70%]"
-      /> */}
-      <div className="absolute top-[18%] left-0 w-full h-[50%] flex flex-col items-center justify-center z-10 text-white text-center">
-        <h1 className="text-2xl sm:text-3xl md:text-[40px] font-bold text-white mb-4">
+      <div className="absolute top-[16%] left-0 w-full h-[50%] flex flex-col items-center justify-center z-10 text-white text-center">
+        <h1 className="text-2xl sm:text-3xl md:text-[40px] font-bold text-white mb-10">
           <span
             className="relative inline-block
              after:content-['']
@@ -75,30 +54,38 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
           </span>
         </h1>
         <ul className="space-y-2 text-2xl font-bold">
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Leadership Team</li>
-          <li>Creative Team</li>
-          <li>Portfolio</li>
-          <li>Contact Us</li>
+          <li>
+            <a href="#welcome" onClick={() => setIsOpen(false)}>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#aboutus" onClick={() => setIsOpen(false)}>
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="#services" onClick={() => setIsOpen(false)}>
+              Leadership Team
+            </a>
+          </li>
+          <li>
+            <a href="#working" onClick={() => setIsOpen(false)}>
+              Creative Team
+            </a>
+          </li>
+          <li>
+            <a href="#testimonials" onClick={() => setIsOpen(false)}>
+              Portfolio
+            </a>
+          </li>
+          <li>
+            <a href="#contact" onClick={() => setIsOpen(false)}>
+              Contact Us
+            </a>
+          </li>
         </ul>
       </div>
-
-      {/* <img
-        src={tornpage}
-        alt=""
-        className="absolute -bottom-9  w-full scale-150 h-[40%]"
-      />
-      <img
-        src={tornpage}
-        alt=""
-        className="absolute -bottom-15  w-full scale-150 h-[40%]"
-      />
-      <img
-        src={tornpage}
-        alt=""
-        className="absolute -bottom-18  w-full h-[40%]"
-      /> */}
     </div>
   );
 };

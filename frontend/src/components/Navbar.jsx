@@ -24,11 +24,11 @@ const Navbar = () => {
   return (
     <div
       className="flex items-center justify-between py-2 px-4"
-      style={{ height: "72px" }} // Fix navbar height here to prevent jumping
+      style={{ height: "72px" }}
     >
       <div
         className="lg:w-35 lg:h-17.5 md:w-30 md:h-15 sm:w-25 sm:h-12.5 w-35 h-17.5 ml-4"
-        style={{ maxHeight: "72px" }} // Keep logo container height consistent
+        style={{ maxHeight: "72px" }}
       >
         <img
           src={logo}

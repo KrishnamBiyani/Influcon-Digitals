@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import video from "../assets/vid.mp4";
-import { useRef, useState, useLayoutEffect } from "react";
+import { useRef, useState, useLayoutEffect, useEffect } from "react";
 import Welcome from "./Welcome";
 import About from "./About";
 import Services from "./Services";
@@ -8,6 +8,7 @@ import Working from "./Working";
 import Testimonials from "./Testimonials";
 import FAQ from "./FAQ";
 import Contact from "./Contact";
+import AboutUs from "./AboutUs";
 
 const Home = () => {
   const navbarRef = useRef(null);
@@ -24,6 +25,7 @@ const Home = () => {
 
   const sections = [
     Welcome,
+    AboutUs,
     About,
     Services,
     Working,
@@ -31,6 +33,34 @@ const Home = () => {
     FAQ,
     Contact,
   ];
+
+  // Add smooth scrolling for anchor links
+  useEffect(() => {
+    const handleAnchorClick = (e) => {
+      const target = e.target.closest('a[href^="#"]');
+      if (target) {
+        e.preventDefault();
+        const href = target.getAttribute("href");
+        const hash = href.substring(1);
+
+        const sectionIndex = sections.findIndex(
+          (Component) => Component.name.toLowerCase() === hash
+        );
+
+        if (sectionIndex !== -1) {
+          const targetPosition =
+            navbarHeight + videoHeight + sectionIndex * (videoHeight + 55);
+          window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth",
+          });
+        }
+      }
+    };
+
+    document.addEventListener("click", handleAnchorClick);
+    return () => document.removeEventListener("click", handleAnchorClick);
+  }, [navbarHeight, videoHeight, sections]);
 
   return (
     <>
@@ -65,6 +95,7 @@ const Home = () => {
         {sections.map((Component, idx) => (
           <section
             key={idx}
+            id={Component.name.toLowerCase()}
             className="sticky"
             style={{
               height: videoHeight + 55,
