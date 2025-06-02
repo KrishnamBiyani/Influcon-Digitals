@@ -157,22 +157,29 @@ const Home = () => {
         const href = target.getAttribute("href");
         const hash = href.substring(1);
 
-        const sectionIndex = sections.findIndex(
-          (Component) => Component.name.toLowerCase() === hash
-        );
+        console.log("[Click] href:", href);
+        console.log("[Click] hash:", hash);
+
+        const sectionIndex = sections.findIndex((Component) => {
+          const name = Component.name.toLowerCase();
+          console.log("[Component Check] Component name:", name);
+          return name === hash;
+        });
+
+        console.log("[Result] sectionIndex:", sectionIndex);
 
         if (sectionIndex !== -1) {
-          // Add small delay and ensure scroll only after paint
-          setTimeout(() => {
-            requestAnimationFrame(() => {
-              const targetPosition =
-                navbarHeight + videoHeight + sectionIndex * (videoHeight + 55);
-              window.scrollTo({
-                top: targetPosition,
-                behavior: "smooth",
-              });
-            });
-          }, 100);
+          const targetPosition =
+            navbarHeight + videoHeight + sectionIndex * (videoHeight + 55);
+
+          console.log("[Scroll] Scrolling to position:", targetPosition);
+
+          window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth",
+          });
+        } else {
+          console.warn("[Scroll] Section not found for hash:", hash);
         }
       }
     };
