@@ -139,14 +139,14 @@ const Home = () => {
   }, []);
 
   const sections = [
-    Welcome,
-    AboutUs,
-    About,
-    Services,
-    Working,
-    Testimonials,
-    FAQ,
-    Contact,
+    { component: Welcome, name: "welcome" },
+    { component: AboutUs, name: "aboutus" },
+    { component: About, name: "about" },
+    { component: Services, name: "services" },
+    { component: Working, name: "working" },
+    { component: Testimonials, name: "testimonials" },
+    { component: FAQ, name: "faq" },
+    { component: Contact, name: "contact" },
   ];
 
   useEffect(() => {
@@ -160,9 +160,8 @@ const Home = () => {
         console.log("[Click] href:", href);
         console.log("[Click] hash:", hash);
 
-        const sectionIndex = sections.findIndex((Component) => {
-          const name = Component.name.toLowerCase();
-          console.log("[Component Check] Component name:", name);
+        const sectionIndex = sections.findIndex(({ name }) => {
+          console.log("[Component Check] Section name:", name);
           return name === hash;
         });
 
@@ -218,10 +217,10 @@ const Home = () => {
           minHeight: `${sections.length * 100}vh`,
         }}
       >
-        {sections.map((Component, idx) => (
+        {sections.map(({ component: Component, name }, idx) => (
           <section
             key={idx}
-            id={Component.name.toLowerCase()}
+            id={name}
             className="sticky"
             style={{
               height: videoHeight + 55,
