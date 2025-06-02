@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import bg from "../assets/menu-bg.png";
+import hoverBg from "../assets/white-bg.png"; // Add your background image
 
 const SideMenu = ({ isOpen, setIsOpen }) => {
   const menuRef = useRef();
@@ -22,17 +23,25 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
     };
   }, [isOpen, setIsOpen]);
 
+  const menuItems = [
+    { id: "welcome", label: "Home" },
+    { id: "aboutus", label: "About Us" },
+    { id: "services", label: "Leadership Team" },
+    { id: "working", label: "Creative Team" },
+    { id: "testimonials", label: "Portfolio" },
+    { id: "contact", label: "Contact Us" },
+  ];
+
   return (
     <div
       ref={menuRef}
       id="side-menu"
-      className={`flex flex-col justify-between fixed top-1/2 right-0 transform -translate-y-1/2 transition-transform duration-300 overflow:hidden z-50 rounded-xl
+      className={`flex flex-col justify-between fixed top-1/2 right-0 transform -translate-y-1/2 transition-transform duration-300 overflow-hidden z-50 rounded-xl
       ${
         isOpen
           ? "xl:translate-x-[-270px] 2xl:translate-x-[-310px]"
           : "translate-x-full"
-      }
-    `}
+      }`}
       style={{
         width: "904px",
         height: "595px",
@@ -41,8 +50,8 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute top-[18%] left-0 w-full h-[50%] flex flex-col items-center justify-center z-10 text-white text-center">
-        <h1 className="text-2xl sm:text-3xl md:text-[40px] font-bold text-white mb-8">
+      <div className="absolute top-[16%] left-0 w-full h-[50%] flex flex-col items-center justify-center z-10 text-white text-center">
+        <h1 className="text-2xl sm:text-3xl md:text-[40px] font-bold text-white mb-10">
           <span
             className="relative inline-block
              after:content-['']
@@ -54,60 +63,30 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
           </span>
         </h1>
         <ul className="space-y-2 text-2xl font-bold">
-          <li>
-            <a
-              href="#welcome"
-              className="inline-block px-4 py-1 rounded hover:bg-white hover:text-blue-600 transition-colors duration-200"
-              onClick={() => setIsOpen(false)}
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="#aboutus"
-              className="inline-block px-4 py-1 rounded hover:bg-white hover:text-blue-600 transition-colors duration-200"
-              onClick={() => setIsOpen(false)}
-            >
-              About Us
-            </a>
-          </li>
-          <li>
-            <a
-              href="#services"
-              className="inline-block px-4 py-1 rounded hover:bg-white hover:text-blue-600 transition-colors duration-200"
-              onClick={() => setIsOpen(false)}
-            >
-              Leadership Team
-            </a>
-          </li>
-          <li>
-            <a
-              href="#working"
-              className="inline-block px-4 py-1 rounded hover:bg-white hover:text-blue-600 transition-colors duration-200"
-              onClick={() => setIsOpen(false)}
-            >
-              Creative Team
-            </a>
-          </li>
-          <li>
-            <a
-              href="#testimonials"
-              className="inline-block px-4 py-1 rounded hover:bg-white hover:text-blue-600 transition-colors duration-200"
-              onClick={() => setIsOpen(false)}
-            >
-              Portfolio
-            </a>
-          </li>
-          <li>
-            <a
-              href="#contact"
-              className="inline-block px-4 py-1 rounded hover:bg-white hover:text-blue-600 transition-colors duration-200"
-              onClick={() => setIsOpen(false)}
-            >
-              Contact Us
-            </a>
-          </li>
+          {menuItems.map((item) => (
+            <li key={item.id}>
+              <a
+                href={`#${item.id}`}
+                onClick={() => setIsOpen(false)}
+                className="relative inline-block px-3 py-1 rounded group"
+              >
+                {/* Background image span */}
+                <span
+                  className="absolute inset-0 rounded opacity-0 group-hover:opacity-100 transition duration-300"
+                  style={{
+                    backgroundImage: `url(${hoverBg})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    zIndex: -1,
+                  }}
+                ></span>
+                {/* Text content */}
+                <span className="relative z-10 group-hover:text-[#005AE0]">
+                  {item.label}
+                </span>
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
