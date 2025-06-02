@@ -22,9 +22,7 @@ body {
   font-family: 'Satoshi', sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+
 
 .double-underline {
   position: relative;
