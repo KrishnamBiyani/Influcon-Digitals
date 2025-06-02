@@ -41,8 +41,8 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute top-[16%] left-0 w-full h-[50%] flex flex-col items-center justify-center z-10 text-white text-center">
-        <h1 className="text-2xl sm:text-3xl md:text-[40px] font-bold text-white mb-10">
+      <div className="absolute top-[18%] left-0 w-full h-[50%] flex flex-col items-center justify-center z-10 text-white text-center">
+        <h1 className="text-2xl sm:text-3xl md:text-[40px] font-bold text-white mb-8">
           <span
             className="relative inline-block
              after:content-['']
@@ -55,32 +55,56 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
         </h1>
         <ul className="space-y-2 text-2xl font-bold">
           <li>
-            <a href="#welcome" onClick={() => setIsOpen(false)}>
+            <a
+              href="#welcome"
+              className="inline-block px-4 py-1 rounded hover:bg-white hover:text-blue-600 transition-colors duration-200"
+              onClick={() => setIsOpen(false)}
+            >
               Home
             </a>
           </li>
           <li>
-            <a href="#aboutus" onClick={() => setIsOpen(false)}>
+            <a
+              href="#aboutus"
+              className="inline-block px-4 py-1 rounded hover:bg-white hover:text-blue-600 transition-colors duration-200"
+              onClick={() => setIsOpen(false)}
+            >
               About Us
             </a>
           </li>
           <li>
-            <a href="#services" onClick={() => setIsOpen(false)}>
+            <a
+              href="#services"
+              className="inline-block px-4 py-1 rounded hover:bg-white hover:text-blue-600 transition-colors duration-200"
+              onClick={() => setIsOpen(false)}
+            >
               Leadership Team
             </a>
           </li>
           <li>
-            <a href="#working" onClick={() => setIsOpen(false)}>
+            <a
+              href="#working"
+              className="inline-block px-4 py-1 rounded hover:bg-white hover:text-blue-600 transition-colors duration-200"
+              onClick={() => setIsOpen(false)}
+            >
               Creative Team
             </a>
           </li>
           <li>
-            <a href="#testimonials" onClick={() => setIsOpen(false)}>
+            <a
+              href="#testimonials"
+              className="inline-block px-4 py-1 rounded hover:bg-white hover:text-blue-600 transition-colors duration-200"
+              onClick={() => setIsOpen(false)}
+            >
               Portfolio
             </a>
           </li>
           <li>
-            <a href="#contact" onClick={() => setIsOpen(false)}>
+            <a
+              href="#contact"
+              className="inline-block px-4 py-1 rounded hover:bg-white hover:text-blue-600 transition-colors duration-200"
+              onClick={() => setIsOpen(false)}
+            >
               Contact Us
             </a>
           </li>

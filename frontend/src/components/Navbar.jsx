@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <div
-      className="flex items-center justify-between py-2 px-4"
+      className="flex items-center justify-between py-2 px-4 relative z-40"
       style={{ height: "72px" }}
     >
       <div
@@ -54,6 +54,15 @@ const Navbar = () => {
           <span className={getBarClasses("w-3/4")} style={getBarStyle()}></span>
         </button>
       </div>
+
+      {/* Overlay when side menu is open */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 z-20 transition-opacity duration-700"
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}
+          onClick={() => setIsOpen(false)}
+        ></div>
+      )}
 
       <SideMenu isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
