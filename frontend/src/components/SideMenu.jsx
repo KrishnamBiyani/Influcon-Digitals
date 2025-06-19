@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import bg from "../assets/menu-bg.png";
-import hoverBg from "../assets/white-bg.png"; // Add your background image
+import hoverBg from "../assets/white-bg.png";
 
 const SideMenu = ({ isOpen, setIsOpen }) => {
   const menuRef = useRef();
@@ -37,20 +37,22 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
       ref={menuRef}
       id="side-menu"
       className={`flex flex-col justify-between fixed top-1/2 right-0 transform -translate-y-1/2 transition-transform duration-300 overflow-hidden z-50 rounded-xl
-      ${
-        isOpen
-          ? "xl:translate-x-[-270px] 2xl:translate-x-[-310px]"
-          : "translate-x-full"
-      }`}
+        ${
+          isOpen
+            ? "translate-x-0 xl:translate-x-[-270px] 2xl:translate-x-[-310px]"
+            : "translate-x-full"
+        }`}
       style={{
-        width: "904px",
-        height: "595px",
+        width: "100vw",
+        maxWidth: "904px",
+        height: "100vh",
+        maxHeight: "595px",
         backgroundImage: `url(${bg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute top-[16%] left-0 w-full h-[50%] flex flex-col items-center justify-center z-10 text-white text-center">
+      <div className="absolute top-[16%] left-0 w-full h-[50%] flex flex-col items-center justify-center z-10 text-white text-center px-4">
         <h1 className="text-2xl sm:text-3xl md:text-[40px] font-bold text-white mb-10">
           <span
             className="relative inline-block
@@ -70,7 +72,6 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
                 onClick={() => setIsOpen(false)}
                 className="relative inline-block px-3 py-1 rounded group"
               >
-                {/* Background image span */}
                 <span
                   className="absolute inset-0 rounded opacity-0 group-hover:opacity-100 transition duration-300"
                   style={{
@@ -80,7 +81,6 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
                     zIndex: -1,
                   }}
                 ></span>
-                {/* Text content */}
                 <span className="relative z-10 group-hover:text-[#005AE0]">
                   {item.label}
                 </span>
