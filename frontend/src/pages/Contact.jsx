@@ -42,8 +42,8 @@ const Contact = ({ navbarHeight }) => {
         </div>
 
         {/* Main Content */}
-        <div className="pt-[18px] md:pt-[20px] flex justify-center px-4 max-w-[90rem]">
-          <div className="relative w-32 md:w-48 lg:w-[32rem]">
+        <div className="md:pt-[20px] flex justify-center px-4 max-w-[90rem]">
+          <div className="relative w-32 md:w-48 lg:w-[32rem] hidden md:block">
             {/* Card */}
             <img
               src={influconCard}
@@ -58,8 +58,8 @@ const Contact = ({ navbarHeight }) => {
             />
           </div>
 
-          <div className="w-full pt-30">
-            <div className="flex flex-col lg:flex-row items-center justify-between mb-12 2xl:mb-5">
+          <div className="w-full pt-10 sm:pt-30">
+            <div className="flex flex-col lg:flex-row items-center justify-between sm:mb-12 2xl:mb-5">
               <div className="text-center text-white mb-8 lg:mb-0">
                 <h1 className="text-2xl md:text-5xl font-bold text-white drop-shadow-lg z-20">
                   Become part of the{" "}
@@ -78,9 +78,11 @@ const Contact = ({ navbarHeight }) => {
             </div>
 
             {/* Footer Links */}
-            <div className="grid grid-cols-1 md:grid-cols-3 max-w-3xl text-white pl-7 pt-12">
+            <div className="grid grid-cols-3 md:grid-cols-3 sm:max-w-3xl text-white  sm:pl-7 pt-0 sm:pt-12">
               <div>
-                <h3 className="text-2xl font-bold mb-6">Navigation</h3>
+                <h3 className="text-lg sm:text-2xl font-bold mb-6">
+                  Navigation
+                </h3>
                 <ul className="space-y-3">
                   {[
                     "Service",
@@ -101,7 +103,7 @@ const Contact = ({ navbarHeight }) => {
                 </ul>
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-6">License</h3>
+                <h3 className="text-lg sm:text-2xl font-bold mb-6">License</h3>
                 <ul className="space-y-3">
                   {["Privacy Policy", "Copyright", "Email Address"].map(
                     (item, idx) => (
@@ -118,7 +120,7 @@ const Contact = ({ navbarHeight }) => {
                 </ul>
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-6">Contact</h3>
+                <h3 className="text-lg sm:text-2xl font-bold mb-6">Contact</h3>
                 <ul className="space-y-3">
                   <li className="flex items-center">
                     <svg
@@ -139,8 +141,10 @@ const Contact = ({ navbarHeight }) => {
                       <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                       <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                     </svg>
-                    <span className="text-white font-medium">
-                      influcondigitals@gmail.com
+                    <span className="text-white font-medium break-words">
+                      influcon
+                      <span className="block sm:inline">digitals</span>
+                      <span className="block sm:inline">@gmail.com</span>
                     </span>
                   </li>
                   <li className="flex items-start">

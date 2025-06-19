@@ -53,8 +53,8 @@ const FAQ = ({ navbarHeight }) => {
         </div>
 
         {/* Content starts after the torn strip */}
-        <div className=" pt-[18px] md:pt-[50px] flex flex-col items-center justify-center px-4 max-w-7xl mx-auto">
-          <div className="w-full flex flex-col lg:flex-row gap-8 lg:gap-12">
+        <div className="pt-[18px] md:pt-[50px] flex flex-col items-center justify-center px-4 max-w-7xl mx-auto">
+          <div className="w-full flex flex-col lg:flex-row gap-0 sm:gap-8 lg:gap-12 mt-6">
             {/* Left Side - Header, Description, and Contact */}
             <div className="w-full xl:w-[42%] 2xl:w-[45%] ">
               {/* Header */}
@@ -94,7 +94,7 @@ const FAQ = ({ navbarHeight }) => {
             </div>
 
             {/* Right Side - FAQs and Contact Form */}
-            <div className=" w-full xl:w-[45%] 2xl:w-[48%] mt-6">
+            <div className=" w-full  xl:w-[45%] 2xl:w-[48%] mt-6">
               {/* FAQ Questions */}
               <div className="space-y-4 mb-8">
                 {/* FAQ 1 */}

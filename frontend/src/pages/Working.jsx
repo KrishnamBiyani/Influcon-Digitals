@@ -58,13 +58,13 @@ const Working = ({ navbarHeight }) => {
         {/* Content starts after the torn strip */}
         <div className="pt-[18px] md:pt-[40px] flex flex-col items-center justify-center px-4 max-w-5xl mx-auto">
           {/* How We Work Header */}
-          <div className="w-full text-center">
-            <h1 className="text-md sm:text-xl md:text-5xl font-bold text-[#035BFF] drop-shadow-lg z-20 mb-6">
+          <div className="w-full text-center mt-4">
+            <h1 className="text-2xl sm:text-xl md:text-5xl font-bold text-[#035BFF] drop-shadow-lg z-20 mb-6">
               How <span className="double-underline">We Work</span>
             </h1>
 
             <div className="flex items-center justify-center mb-6">
-              <p className="text-blue-600 font-bold text-sm md:text-2xl">
+              <p className="text-blue-600 font-bold text-[0.7rem] sm:text-sm md:text-2xl">
                 We believe the best ideas don't start with a pitch —{" "}
                 <em className="text-blue-600 font-black">
                   they start with listening
@@ -76,8 +76,8 @@ const Working = ({ navbarHeight }) => {
 
           <div className="w-full flex flex-col lg:flex-row">
             {/* Left side: Process steps */}
-            <div className="w-[75%]  font-bold px-20">
-              <div className="flex ">
+            <div className="w-full sm:w-[90%] md:w-[75%] font-bold px-4 sm:px-12 md:px-20">
+              <div className="flex">
                 <div className="flex-shrink-0 mr-4 pt-1">
                   <div className="bg-blue-600 rounded-full w-12 h-12 md:w-15 md:h-15 flex items-center justify-center">
                     <img
@@ -88,7 +88,7 @@ const Working = ({ navbarHeight }) => {
                   </div>
                 </div>
                 <div>
-                  <p className="text-sm md:text-lg font-normal leading-[1.2] text-[#005AE0]">
+                  <p className="text-[0.68rem] sm:text-sm md:text-lg font-normal leading-[1.25] text-[#005AE0]">
                     Before we dive into strategies or designs, we take time to
                     understand your brand — where you are now, where you want to
                     go, and what might be standing in the way.
@@ -98,7 +98,7 @@ const Working = ({ navbarHeight }) => {
 
               <div className="w-full border-l-2 border-blue-600 ml-7 h-20"></div>
 
-              <div className="flex ">
+              <div className="flex">
                 <div className="flex-shrink-0 mr-4 pt-1">
                   <div className="bg-blue-600 rounded-full p-4 w-12 h-12 md:w-15 md:h-15 flex items-center justify-center">
                     <img
@@ -109,7 +109,7 @@ const Working = ({ navbarHeight }) => {
                   </div>
                 </div>
                 <div>
-                  <p className="text-sm md:text-lg font-normal leading-[1.2] text-[#005AE0]">
+                  <p className="text-[0.68rem] sm:text-sm md:text-lg font-normal leading-[1.25] text-[#005AE0]">
                     Once we’re aligned, we build a plan that’s made just for
                     you. No shortcuts, no trends for the sake of it — just
                     thoughtful work that clicks with your audience and delivers
@@ -131,7 +131,7 @@ const Working = ({ navbarHeight }) => {
                   </div>
                 </div>
                 <div>
-                  <p className="text-sm md:text-lg font-normal leading-[1.2] text-[#005AE0]">
+                  <p className="text-[0.68rem] sm:text-sm md:text-lg font-normal leading-[1.25] text-[#005AE0]">
                     Once we’re aligned, we build a plan that’s made just for
                     you. No shortcuts, no trends for the sake of it — just
                     thoughtful work that clicks with your audience and delivers
@@ -142,6 +142,7 @@ const Working = ({ navbarHeight }) => {
             </div>
           </div>
         </div>
+
         <div>
           <img
             src={eyeIcon}

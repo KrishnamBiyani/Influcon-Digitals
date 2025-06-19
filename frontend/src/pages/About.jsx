@@ -57,7 +57,7 @@ const About = ({ navbarHeight }) => {
         {/* Content starts after the torn strip */}
         <div className="pt-[18px] md:pt-[15px] flex flex-col items-center justify-center text-center px-4">
           <div className="">
-            <h1 className=" text-md sm:text-xl md:text-5xl font-bold text-white drop-shadow-lg z-20 flex items-center space-x-2">
+            <h1 className=" text-2xl sm:text-xl md:text-5xl font-bold text-white drop-shadow-lg z-20 flex items-center space-x-2">
               {/* Custom underline for "Check us" */}
               <span
                 className="relative inline-block
@@ -95,7 +95,7 @@ const About = ({ navbarHeight }) => {
             </div>
 
             {/* Right: Description */}
-            <div className="text-left text-[0.55rem] sm:text-[0.65rem] md:text-[0.75rem] lg:text-[0.8rem] 2xl:text-[0.9rem] text-white max-w-7xl xl:w-[38%] 2xl:w-[50%] font-bold leading-[1.4]">
+            <div className="text-left text-[0.75rem] sm:text-[0.65rem] md:text-[0.75rem] lg:text-[0.8rem] 2xl:text-[0.9rem] text-white max-w-7xl xl:w-[38%] 2xl:w-[50%] font-bold leading-[1.4]">
               <p className="mb-4">
                 In this episode of The Arun Mukherjee Show, we sit down with the
                 22-year-old founders of InfluCon Digitals, a fast-growing

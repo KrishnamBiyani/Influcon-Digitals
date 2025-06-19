@@ -59,8 +59,8 @@ const Testimonials = ({ navbarHeight }) => {
         {/* Content starts after the torn strip */}
         <div className="pt-[18px] md:pt-[45px] flex flex-col items-center justify-center px-4 max-w-7xl mx-auto">
           {/* Client Testimonials Header */}
-          <div className="w-full text-center mb-8">
-            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-2">
+          <div className="w-full text-center sm:mb-8">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white sm:mb-2 mt-5 sm:mt-4">
               <span
                 className="relative inline-block
              after:content-['']
@@ -76,7 +76,7 @@ const Testimonials = ({ navbarHeight }) => {
           </div>
 
           {/* Testimonial Cards */}
-          <div className="w-[92%] grid grid-cols-1 md:grid-cols-3 mt-2 z-1">
+          <div className="w-[92%] grid grid-cols-1 md:grid-cols-3 -mt-18 gap-4 sm:gap-0 sm:mt-2 z-1 scale-[0.72] sm:scale-100">
             {/* Testimonial 1 */}
             <div
               className="rounded-xl p-5 shadow-xl h-auto xl:h-[270px] xl:w-[360px] md:h-70"

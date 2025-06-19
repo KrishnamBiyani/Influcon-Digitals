@@ -62,12 +62,13 @@ const Services = ({ navbarHeight }) => {
         {/* Content starts after the torn strip */}
         <div className="pt-[18px] md:pt-[35px] flex flex-col items-center justify-center text-center px-4">
           {/* Title */}
-          <h1 className="text-md sm:text-xl md:text-5xl font-bold text-[#035BFF] drop-shadow-lg z-20 mb-6">
+          <h1 className="text-2xl sm:text-xl md:text-5xl font-bold text-[#035BFF] drop-shadow-lg z-20 mb-6">
             Our <span className="double-underline">Services</span>
           </h1>
 
           {/* Services Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl z-10">
+          {/* Services Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-7xl z-10">
             {[
               { title: "Branding & Identity", img: branding },
               { title: "Social Media Marketing", img: social },
@@ -78,7 +79,9 @@ const Services = ({ navbarHeight }) => {
             ].map((service, i) => (
               <div
                 key={i}
-                className="bg-white shadow-xl  rounded-md overflow-hidden w-[182px] h-[221px] mx-auto border-[3px] border-white p-2"
+                className="bg-white shadow-xl rounded-md overflow-hidden
+        w-[150px] h-[190px] sm:w-[182px] sm:h-[221px]
+        mx-auto border-[3px] border-white p-2"
                 style={{
                   boxShadow: "-2px 2px 4px rgba(0, 0, 0, 0.4)",
                 }}
@@ -95,10 +98,10 @@ const Services = ({ navbarHeight }) => {
                   <img
                     src={service.img}
                     alt={service.title}
-                    className="w-[50%] h-auto object-contain "
+                    className="w-[50%] h-auto object-contain"
                   />
                 </div>
-                <div className="h-[22%] bg-white text-sm font-bold text-[#137CFE] flex items-center justify-center px-2 text-center ">
+                <div className="h-[22%] bg-white text-[0.6rem] sm:text-sm font-bold text-[#137CFE] flex items-center justify-center px-2 text-center">
                   {service.title}
                 </div>
               </div>

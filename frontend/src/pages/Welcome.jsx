@@ -48,14 +48,14 @@ const Welcome = ({ navbarHeight }) => {
 
         {/* Main Content */}
         <div className="pt-[75px] md:pt-[55px] flex flex-col items-center justify-center text-center px-4 ">
-          <h1 className="text-2xl md:text-5xl font-bold text-blue-700 drop-shadow-lg z-20">
+          <h1 className="text-2xl md:text-5xl font-bold text-blue-700 drop-shadow-lg z-20 mb-10 sm:mb-0">
             Welcome to <span className="double-underline mr-2">InfluCon</span>
             <span className="double-underline">Digitals</span>
           </h1>
 
           {/* Monitor image and description */}
           <div className="flex flex-col md:flex-row items-center justify-center ">
-            <p className="text-sm md:text-xl text-[#1E1F21] font-normal max-w-[38rem] z-20 text-left leading-[1.2] ">
+            <p className="text-sm md:text-xl text-[#1E1F21] font-normal max-w-[38rem] z-20 text-center sm:text-left leading-[1.2] ">
               Your{" "}
               <strong>
                 <em>Growth Partner</em>
@@ -85,7 +85,7 @@ const Welcome = ({ navbarHeight }) => {
               alt="Speaker"
               className="hidden md:block w-[260px] -mt-12 -ml-30"
             />
-            <div className="text-left">
+            <div className="text-center sm:text-left">
               <p className="text-sm md:text-xl text-[#1E1F21] font-normal max-w-xl z-20 pr-2 leading-[1.2]">
                 From launching bold start-ups to elevating established brands,
                 we bring strategy, creativity, and{" "}
@@ -97,7 +97,7 @@ const Welcome = ({ navbarHeight }) => {
                   <em>lasting impressions</em>.
                 </strong>
               </p>
-              <div className="flex space-x-5 md:space-x-8 mt-4 text-[#005AE0]  text-2xl md:text-4xl">
+              <div className="justify-center sm:justify-self-start flex space-x-5 md:space-x-8 mt-8 sm:mt-4 text-[#005AE0]  text-2xl md:text-4xl">
                 <div>
                   <p className="font-black ml-2">20+</p>
                   <p className="text-base md:text-2xl font-medium">Clients</p>

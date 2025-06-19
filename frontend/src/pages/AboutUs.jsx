@@ -55,8 +55,8 @@ const AboutUs = ({ navbarHeight }) => {
         {/* Content starts after the torn strip */}
         <div className="pt-[18px] md:pt-[40px] flex flex-col items-center justify-center px-4 max-w-5xl mx-auto">
           {/* About Us Header */}
-          <div className="w-full text-center">
-            <h1 className="text-md sm:text-xl md:text-5xl font-bold text-white drop-shadow-lg z-20 mb-6">
+          <div className="w-full text-center px-2 sm:px-4 mt-4">
+            <h1 className="text-xl sm:text-xl md:text-5xl font-bold text-white drop-shadow-lg z-20 mb-6">
               <span
                 className="relative inline-block
              after:content-['']
@@ -72,9 +72,9 @@ const AboutUs = ({ navbarHeight }) => {
 
           <div className="w-full flex flex-col lg:flex-row">
             {/* Left side: Main content */}
-            <div className="w-[75%] px-10 ">
-              <div className="text-white  mb-6">
-                <div className="w-[85%] mb-2">
+            <div className="w-full lg:w-[75%] px-4 md:px-10">
+              <div className="text-white mb-6">
+                <div className="w-full md:w-[85%] mb-2">
                   <em>
                     <p className="text-white leading-[1.2] font-bold text-sm md:text-3xl">
                       "We are the{" "}
@@ -120,13 +120,11 @@ const AboutUs = ({ navbarHeight }) => {
                   <span className="font-bold">Influcon Digitals.</span>
                 </p>
               </div>
-
-              {/* Final Quote */}
             </div>
           </div>
         </div>
 
-        <div className="absolute left-10 top-[0] z-0 hidden xl:block xl:w-88 2xl:w-100  -rotate-10">
+        <div className="absolute left-10 top-[0] z-0 hidden xl:block xl:w-88 2xl:w-100 -rotate-10">
           <img
             src={handLeft}
             alt="hand left"
@@ -147,7 +145,7 @@ const AboutUs = ({ navbarHeight }) => {
             className="absolute right-0 -top-7 z-0 hidden xl:block xl:w-145 2xl:w-w-135"
           />
         </div>
-        <div className="absolute text-white text-2xl md:text-3xl font-bold italic xl:bottom-40 xl:left-115 2xl:bottom-15 2xl:left-118 ">
+        <div className="absolute text-white text-lg md:text-3xl font-bold italic left-10 xl:bottom-40 xl:left-115 2xl:bottom-15 2xl:left-118">
           "Where influence meets conversion."
         </div>
       </div>
