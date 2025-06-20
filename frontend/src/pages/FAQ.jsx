@@ -3,9 +3,34 @@ import bgPaper from "../assets/white-bg.png";
 import black from "../assets/blackboard.png";
 import handshakeImage from "../assets/FAQ-handshake.png";
 import text from "../assets/FAQ-text.png";
+import { useEffect, useState } from "react";
 
 const FAQ = ({ navbarHeight }) => {
   const offsetTop = navbarHeight * 1.2;
+
+  const [scaleStyle, setScaleStyle] = useState({});
+
+  useEffect(() => {
+    const checkHeight = () => {
+      if (window.innerHeight < 700) {
+        setScaleStyle({
+          transform: "scale(0.60)",
+          transformOrigin: "50% 5%",
+        });
+      } else if (window.innerHeight < 800) {
+        setScaleStyle({
+          transform: "scale(0.60)",
+          transformOrigin: "50% 5%",
+        });
+      } else {
+        setScaleStyle({});
+      }
+    };
+
+    checkHeight();
+    window.addEventListener("resize", checkHeight);
+    return () => window.removeEventListener("resize", checkHeight);
+  }, []);
 
   return (
     <div className="w-full min-h-screen relative bg-transparent">
@@ -53,7 +78,10 @@ const FAQ = ({ navbarHeight }) => {
         </div>
 
         {/* Content starts after the torn strip */}
-        <div className="pt-[18px] md:pt-[50px] flex flex-col items-center justify-center px-4 max-w-7xl mx-auto">
+        <div
+          className="pt-[18px] md:pt-[50px] flex flex-col items-center justify-center px-4 max-w-7xl mx-auto"
+          style={scaleStyle}
+        >
           <div className="w-full flex flex-col lg:flex-row gap-0 sm:gap-8 lg:gap-12 mt-6">
             {/* Left Side - Header, Description, and Contact */}
             <div className="w-full xl:w-[42%] 2xl:w-[45%] ">

@@ -57,7 +57,7 @@ const About = ({ navbarHeight }) => {
         {/* Content starts after the torn strip */}
         <div className="pt-[18px] md:pt-[15px] flex flex-col items-center justify-center text-center px-4">
           <div className="">
-            <h1 className=" text-2xl sm:text-xl md:text-5xl font-bold text-white drop-shadow-lg z-20 flex items-center space-x-2">
+            <h1 className=" text-[21px] sm:text-xl md:text-5xl font-bold text-white drop-shadow-lg z-20 flex items-center space-x-2">
               {/* Custom underline for "Check us" */}
               <span
                 className="relative inline-block

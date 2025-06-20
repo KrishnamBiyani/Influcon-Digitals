@@ -7,9 +7,34 @@ import megaphone from "../assets/testimonials-speaker.png"; // The megaphone ico
 import neetoProfile from "../assets/testimonials-neetu.png";
 import adityaProfile from "../assets/testimonials-aditya.png";
 import riyaProfile from "../assets/testimonials-riya.png";
+import { useEffect, useState } from "react";
 
 const Testimonials = ({ navbarHeight }) => {
   const offsetTop = navbarHeight * 1.2;
+
+  const [scaleStyle, setScaleStyle] = useState({});
+
+  useEffect(() => {
+    const checkHeight = () => {
+      if (window.innerHeight < 700) {
+        setScaleStyle({
+          transform: "scale(0.75)",
+          transformOrigin: "50% 5%",
+        });
+      } else if (window.innerHeight < 800) {
+        setScaleStyle({
+          transform: "scale(0.85)",
+          transformOrigin: "50% 5%",
+        });
+      } else {
+        setScaleStyle({});
+      }
+    };
+
+    checkHeight();
+    window.addEventListener("resize", checkHeight);
+    return () => window.removeEventListener("resize", checkHeight);
+  }, []);
 
   return (
     <div className="w-full min-h-screen relative bg-transparent">
@@ -57,7 +82,10 @@ const Testimonials = ({ navbarHeight }) => {
         </div>
 
         {/* Content starts after the torn strip */}
-        <div className="pt-[18px] md:pt-[45px] flex flex-col items-center justify-center px-4 max-w-7xl mx-auto">
+        <div
+          className="pt-[18px] md:pt-[45px] flex flex-col items-center justify-center px-4 max-w-7xl mx-auto"
+          style={scaleStyle}
+        >
           {/* Client Testimonials Header */}
           <div className="w-full text-center sm:mb-8">
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white sm:mb-2 mt-5 sm:mt-4">

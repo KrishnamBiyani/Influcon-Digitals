@@ -10,9 +10,34 @@ import web from "../assets/services-web.png";
 import media from "../assets/services-media.png";
 import marketing from "../assets/services-marketing.png";
 import seo from "../assets/services-seo.png";
+import { useEffect, useState } from "react";
 
 const Services = ({ navbarHeight }) => {
   const offsetTop = navbarHeight * 1.2;
+
+  const [scaleStyle, setScaleStyle] = useState({});
+
+  useEffect(() => {
+    const checkHeight = () => {
+      if (window.innerHeight < 700) {
+        setScaleStyle({
+          transform: "scale(0.75)",
+          transformOrigin: "50% 20%",
+        });
+      } else if (window.innerHeight < 800) {
+        setScaleStyle({
+          transform: "scale(0.85)",
+          transformOrigin: "50% 20%",
+        });
+      } else {
+        setScaleStyle({});
+      }
+    };
+
+    checkHeight();
+    window.addEventListener("resize", checkHeight);
+    return () => window.removeEventListener("resize", checkHeight);
+  }, []);
 
   return (
     <div className="w-full min-h-screen relative bg-transparent ">
@@ -60,7 +85,10 @@ const Services = ({ navbarHeight }) => {
         </div>
 
         {/* Content starts after the torn strip */}
-        <div className="pt-[18px] md:pt-[35px] flex flex-col items-center justify-center text-center px-4">
+        <div
+          className="pt-[18px] md:pt-[35px] flex flex-col items-center justify-center text-center px-4"
+          style={scaleStyle}
+        >
           {/* Title */}
           <h1 className="text-2xl sm:text-xl md:text-5xl font-bold text-[#035BFF] drop-shadow-lg z-20 mb-6">
             Our <span className="double-underline">Services</span>
