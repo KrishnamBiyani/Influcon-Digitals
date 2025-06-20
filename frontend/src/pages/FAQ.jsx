@@ -14,10 +14,15 @@ const FAQ = ({ navbarHeight }) => {
     const checkHeight = () => {
       const { innerHeight: height, innerWidth: width } = window;
 
-      if (width < 400) {
+      if (width < 450) {
         if (height < 800) {
           setScaleStyle({
             transform: "scale(0.60)",
+            transformOrigin: "50% 5%",
+          });
+        } else if (height < 950) {
+          setScaleStyle({
+            transform: "scale(0.70)",
             transformOrigin: "50% 5%",
           });
         } else {

@@ -21,7 +21,7 @@ const Services = ({ navbarHeight }) => {
     const checkHeight = () => {
       const { innerHeight: height, innerWidth: width } = window;
 
-      if (width < 400) {
+      if (width < 450) {
         if (height < 700) {
           setScaleStyle({
             transform: "scale(0.75)",
