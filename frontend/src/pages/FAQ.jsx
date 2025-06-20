@@ -12,16 +12,17 @@ const FAQ = ({ navbarHeight }) => {
 
   useEffect(() => {
     const checkHeight = () => {
-      if (window.innerHeight < 700) {
-        setScaleStyle({
-          transform: "scale(0.60)",
-          transformOrigin: "50% 5%",
-        });
-      } else if (window.innerHeight < 800) {
-        setScaleStyle({
-          transform: "scale(0.60)",
-          transformOrigin: "50% 5%",
-        });
+      const { innerHeight: height, innerWidth: width } = window;
+
+      if (width < 400) {
+        if (height < 800) {
+          setScaleStyle({
+            transform: "scale(0.60)",
+            transformOrigin: "50% 5%",
+          });
+        } else {
+          setScaleStyle({});
+        }
       } else {
         setScaleStyle({});
       }

@@ -42,28 +42,21 @@ const Home = () => {
         const href = target.getAttribute("href");
         const hash = href.substring(1);
 
-        console.log("[Click] href:", href);
-        console.log("[Click] hash:", hash);
-
         const sectionIndex = sections.findIndex(({ name }) => {
-          console.log("[Component Check] Section name:", name);
+          //console.log("[Component Check] Section name:", name);
           return name === hash;
         });
-
-        console.log("[Result] sectionIndex:", sectionIndex);
 
         if (sectionIndex !== -1) {
           const targetPosition =
             navbarHeight + videoHeight + sectionIndex * (videoHeight + 55);
-
-          console.log("[Scroll] Scrolling to position:", targetPosition);
 
           window.scrollTo({
             top: targetPosition,
             behavior: "smooth",
           });
         } else {
-          console.warn("[Scroll] Section not found for hash:", hash);
+          // console.warn("[Scroll] Section not found for hash:", hash);
         }
       }
     };

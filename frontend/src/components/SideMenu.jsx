@@ -26,8 +26,8 @@ const SideMenu = ({ isOpen, setIsOpen }) => {
   const menuItems = [
     { id: "welcome", label: "Home" },
     { id: "aboutus", label: "About Us" },
-    { id: "services", label: "Leadership Team" },
-    { id: "working", label: "Creative Team" },
+    { id: "about", label: "Leadership Team" },
+    { id: "services", label: "Creative Team" },
     { id: "testimonials", label: "Portfolio" },
     { id: "contact", label: "Contact Us" },
   ];
