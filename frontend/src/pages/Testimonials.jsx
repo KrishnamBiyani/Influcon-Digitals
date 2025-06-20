@@ -23,7 +23,7 @@ const Testimonials = ({ navbarHeight }) => {
         });
       } else if (window.innerHeight < 800) {
         setScaleStyle({
-          transform: "scale(0.85)",
+          transform: "scale(0.80)",
           transformOrigin: "50% 5%",
         });
       } else {
